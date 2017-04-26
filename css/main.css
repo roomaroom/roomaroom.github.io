@@ -1,6 +1,6 @@
 body {
 	background-color: black;
-    margin-top: 50px;
+    margin: 50px 50px 0px 50px;
 }
 .centered {
     text-align: center;
@@ -14,17 +14,46 @@ body {
   display: inline-block;
 }
 #golovna {
-    padding-top: 40px;
-    background-color: green;
+    padding-top: 55px;
+    background: url(../img/photo_4.jpg) no-repeat center;
     height: 500px;
 }
+.btn.button-one {
+    height: 40px;
+    color: orange;
+    border: 3px solid orange;
+    border-radius: 0px;
+}
+.btn.button-two {
+    height: 40px;
+    color: greenyellow;
+    border: 3px solid greenyellow;
+    border-radius: 0px;
+}
+button>span {
+    padding-right: 10px;
+    font-size: 16px;
+}
 #pro_tabir {
-    padding-top: 40px;
+    padding-top: 55px;
+    background: url(../img/photo_5.jpg) no-repeat center;
     background-color: blue;
     height: 500px;
 }
+.text-block1 {
+    background: yellow;
+    height: 150px;
+}
+.text-block2 h1, .text-block2 h4 {
+    color: white;
+}
+.text-block2 {
+    color: white;
+    background: blue;
+    height: 150px;
+}
 #rozporyadok {
-    padding-top: 40px;
+    padding-top: 55px;
     background-color: darkgrey;
     height: 500px;
 }
@@ -34,17 +63,19 @@ body {
     height: 500px;
 }
 #tsiny {
-    padding-top: 40px;
+    padding-top: 55px;
     background-color: blue;
     height: 500px;
 }
 #photo {
-    padding-top: 40px;
+    padding-top: 55px;
     background-color: green;
     height: 500px;
 }
 #kontakty {
-    padding-top: 0px;
+    padding-top: 55px;
     background-color: darkgrey;
     height: 500px;
 }
+
+

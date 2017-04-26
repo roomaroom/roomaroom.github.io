@@ -1,0 +1,50 @@
+body {
+	background-color: black;
+    margin-top: 50px;
+}
+.centered {
+    text-align: center;
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+#golovna {
+    padding-top: 40px;
+    background-color: green;
+    height: 500px;
+}
+#pro_tabir {
+    padding-top: 40px;
+    background-color: blue;
+    height: 500px;
+}
+#rozporyadok {
+    padding-top: 40px;
+    background-color: darkgrey;
+    height: 500px;
+}
+#aktyvnosti {
+    padding-top: 40px;
+    background-color: green;
+    height: 500px;
+}
+#tsiny {
+    padding-top: 40px;
+    background-color: blue;
+    height: 500px;
+}
+#photo {
+    padding-top: 40px;
+    background-color: green;
+    height: 500px;
+}
+#kontakty {
+    padding-top: 0px;
+    background-color: darkgrey;
+    height: 500px;
+}

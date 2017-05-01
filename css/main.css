@@ -122,6 +122,10 @@ table th {
 .table tbody tr td:last-child(2) {
     border-bottom: 0px;
 }
+.table tbody tr td strong {
+    border: 2px solid orange;
+    padding: 0.2em;
+}
 .text-block2_4 p {
     margin-bottom: 20px;
 }
@@ -176,7 +180,6 @@ table th {
 #kontakty {
     padding-top: 55px;
     background-color: #1b161a;
-    min-height: 1000px;
 }
 #kontakty h1 {
     font-weight: 600;

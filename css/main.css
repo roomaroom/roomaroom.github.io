@@ -23,6 +23,9 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 644px;
     background-size: cover;
 }
+.button-block {
+    margin-top: 1.3em;
+}
 .btn.button-one, .btn.button-two {
     font-size: 1em;
     padding-right: 10%;
@@ -36,6 +39,8 @@ h1, h2, h3, h4, h5, h6, p {
     padding-bottom: 0px;
     color: orange;
     border: 4px solid orange;   
+    display: flex;
+    align-items: center;
 }
 .btn.button-two {
     color: greenyellow;
@@ -43,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .but-icon {
     font-size: 2.4em;
-    padding-right: 0.5em;
+    padding: 0.1em 0.5em 0.1em 0em;
 }
 .text-block1_1 h2 {
     margin-top: -0.5em;
@@ -75,8 +80,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 20px;
 }
 .text-block2_2 h3 {
-    margin-top: -0.5em;
-    font-weight: bold;
+
 }
 .text-block2_3 h1, .text-block2_3 h4 {
     color: white;
@@ -93,6 +97,7 @@ table {
 }
 .table > thead > tr > th {
     text-align: center;
+    color: white;
 }
 table tr, table th, table td {
     font-size: 15px;
@@ -174,20 +179,25 @@ table th {
 /*8 BLOCK*/
 #photo {
     padding-top: 55px;
-    background-color: #1b161a;
+    background: url(../img/photo_7.jpg) no-repeat;
+    min-height: 644px;
+    background-size: cover;
 }
 /*9 BLOCK*/
 #kontakty {
     padding-top: 55px;
-    background-color: #1b161a;
+    background: url(../img/map.jpg) no-repeat;
+    min-height: 644px;
+    background-size: cover;
 }
 #kontakty h1 {
     font-weight: 600;
     font-size: 5em;
 }    
-#kontakty img {
-    width: 5em;
-    border: 1px solid white;
+#kontakty i {
+    font-size: 5em;
+    width: 1.4em;
+    color: white;
 }    
 
 

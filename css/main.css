@@ -187,7 +187,6 @@ table th {
 #kontakty {
     padding-top: 55px;
     background: url(../img/map.jpg) no-repeat;
-    min-height: 644px;
     background-size: cover;
 }
 #kontakty h1 {
@@ -198,7 +197,26 @@ table th {
     font-size: 5em;
     width: 1.4em;
     color: white;
-}    
-
+} 
+.text-row9_1 {
+    margin: 2em 0;
+}
+.text-block9_1 {
+    text-align: right;
+    border-right: 1px solid white;
+} 
+.text-block9_1 h3 {
+    padding-right: 1.5em;
+}     
+.text-block9_2 {
+    text-align: left;
+}  
+.text-block9_2 i {
+    vertical-align: bottom; 
+    padding: 0.2em 0 0 0.5em;
+}
+.text-row9_2 {
+    margin-bottom: 2em;
+}
 
 

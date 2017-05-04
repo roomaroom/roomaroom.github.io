@@ -43,7 +43,7 @@ ul li {
     padding-top: 0px;
     padding-bottom: 0px;
     color: orange;
-    border: 4px solid orange;   
+    border: 4px solid orange;
 }
 .btn.button-two {
     color: greenyellow;
@@ -105,7 +105,7 @@ table {
 table tr, table th, table td {
     font-size: 15px;
     text-align: center;
-    
+
 }
 table th {
     font-size: 25px;
@@ -165,14 +165,88 @@ table th {
 
 #rozporyadok {
     padding-top: 55px;
-    background: url(../img/photo_2.jpg) no-repeat;
     min-height: 644px;
-    background-size: cover;
+		background: url(../img/photo_4.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+		font-size: 18px;
+		font-family: Century Gothic;
+}
+.metro {
+	  text-align: center;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+}
+.brd {
+	  border: 3px solid gold; /* Параметры границы */
+		padding: 20px 60px 40px 0px;
+		margin: 20px 100px 50px 110px;
+}
+.rectangle {
+	width: 5px;
+  height: 5px;
+  background: red;
 }
 #aktyvnosti {
     padding-top: 55px;
-    background: url(../img/photo_4.jpg) no-repeat center;
+		background: url(../img/photo_6.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+		font-family: Century Gothic;
     min-height: 1000px;
+}
+.aktyv-underline {
+	text-decoration: underline;
+	color: gold;
+}
+.ico-vo {
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.circle {
+  border-radius: 50%;
+  text-align: center;
+  display: table-cell;
+  overflow: hidden;
+  vertical-align:middle;
+  position: relative;
+}
+.circle span {
+	position: absolute;
+	top: 70px;
+	left: 25px;
+  right: 15px;
+}
+.pos_ten {
+	position: absolute;
+	top: 60px!important;
+}
+.image-tam {
+	width: 100%;
+	height: auto;
+}
+.text_center{
+	font-weight: bold;
+	font-size: 17px;
+}
+.ringo{
+	margin-top: 70px;
+}
+.rin{
+	margin-top: 25px;
+	padding-bottom: 25px;
+}
+.ringos{
+	margin-top: 35px;
+}
+.delta{
+	background: url(../img/photo_6.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	font-family: Century Gothic;
+	min-height: 1000px;
 }
 #tsiny {
     padding-top: 55px;
@@ -192,12 +266,9 @@ table th {
 #kontakty h1 {
     font-weight: 600;
     font-size: 5em;
-}    
+}
 #kontakty img {
     width: 5em;
     border: 1px solid white;
 }    
 */
-.contact__section {
-  background-color: lightgray;
-}

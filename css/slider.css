@@ -4,3 +4,17 @@ list-style:none;
 margin-left: -40px;
 margin-top:20px;
 }
+.hidden-xs ul li {
+	padding-right: 0px;
+    padding-left: 0px; 
+}
+.thumbnail {
+    padding: 0px;
+    background-color: none;
+    border: none;
+}
+.carousel-control span img {
+    margin-left: 120%;
+    height: 60%;
+    margin-top: 70%;
+}

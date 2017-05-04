@@ -38,13 +38,10 @@ h1, h2, h3, h4, h5, h6, p {
     padding-top: 0px;
     padding-bottom: 0px;
     color: orange;
-<<<<<<< HEAD
     border: 4px solid orange;   
     display: flex;
     align-items: center;
-=======
     border: 4px solid orange;
->>>>>>> master
 }
 .btn.button-two {
     color: greenyellow;
@@ -270,7 +267,6 @@ table th {
 #kontakty h1 {
     font-weight: 600;
     font-size: 5em;
-<<<<<<< HEAD
 }    
 #kontakty i {
     font-size: 5em;
@@ -298,11 +294,8 @@ table th {
     margin-bottom: 2em;
 }
 
-
-=======
 }
 #kontakty img {
     width: 5em;
     border: 1px solid white;
 }
->>>>>>> master

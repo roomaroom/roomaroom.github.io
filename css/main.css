@@ -5,6 +5,14 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
+
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
 .centered {
     text-align: center;
 }
@@ -177,7 +185,7 @@ table th {
     background-color: #1b161a;
 }
 /*9 BLOCK*/
-#kontakty {
+/*#kontakty {
     padding-top: 55px;
     background-color: #1b161a;
 }
@@ -189,6 +197,7 @@ table th {
     width: 5em;
     border: 1px solid white;
 }    
-
-
-
+*/
+.contact__section {
+  background-color: lightgray;
+}

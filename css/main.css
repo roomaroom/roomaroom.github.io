@@ -1,9 +1,5 @@
 body {
-<<<<<<< HEAD
-	background-color: black;
-=======
-    background-color: black;
->>>>>>> c6c875d47173bb89822c4d0a5e12d294b68a9b96
+  background-color: black;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   margin: 0px 50px;
   min-width: 320px;
@@ -274,84 +270,76 @@ table th {
 .contact__section{
   background: url(../img/contact_background.png) no-repeat center;
   opacity: 0.9;
-<<<<<<< HEAD
 }
 
 .contact__headind{
-  margin-bottom: 25px;
+  margin-bottom: 2%;
   font-weight: bold;
   letter-spacing: .3em;
   font-size: 1.7em;
 }
 
 .contact_description{
-  margin-bottom: 25px;
+  margin-bottom: 3%;
   letter-spacing: .1em; 
 }
 
 .contact__info-block{
-  margin-bottom: 25px;
+  margin-bottom: 3%;
 }
 
 ul.contact__list-phones li{
   color: #fff;
   border-right: 1px solid #fff;
-  padding-right: 30px;
+  padding-right: 3.5%;
   letter-spacing: .2em; 
 }
 
 ul.contact__list-social li img{
-  width: 40px;
+  width: 3.2em;
 }
 
 ul.contact__list-social li{
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 3.5%;
 }
 
 .contact__email{
-  margin-bottom: 50px;
+  margin-bottom: 5%;
   font-size: 1.1em;
   letter-spacing: .2em; 
 }
-=======
-}
 
-.contact__headind{
-  margin-bottom: 25px;
-  font-weight: bold;
-  letter-spacing: .3em;
-  font-size: 1.7em;
-}
+@media screen and (max-width: 790px) {
 
-.contact_description{
-  margin-bottom: 25px;
-  letter-spacing: .1em; 
-}
+  .contact__phones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-left: 9%; 
+  }
 
-.contact__info-block{
-  margin-bottom: 25px;
-}
+  .contact__social{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
 
-ul.contact__list-phones li{
-  color: #fff;
-  border-right: 1px solid #fff;
-  padding-right: 30px;
-  letter-spacing: .2em; 
-}
+  ul.contact__list-phones li{
+    border-right: none;
+    justify-content: space-around;
+  }
 
-ul.contact__list-social li img{
-  width: 40px;
-}
+  .contact__list-phones{
+    width: 250px;
+  }
 
-ul.contact__list-social li{
-  display: inline-block;
-  padding-right: 30px;
-}
+  .contact__list-social{
+    width: 200px;
+  }
 
-.contact__email{
-  margin-bottom: 50px;
-  font-size: 1.1em;
-  letter-spacing: .2em; 
+  .centering__block{
+    display: none;
+  }
+  
 }
->>>>>>> c6c875d47173bb89822c4d0a5e12d294b68a9b96

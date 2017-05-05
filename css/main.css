@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+  background-color: black;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   margin: 0px 50px;
   min-width: 320px;
@@ -273,39 +273,73 @@ table th {
 }
 
 .contact__headind{
-  margin-bottom: 25px;
+  margin-bottom: 2%;
   font-weight: bold;
   letter-spacing: .3em;
   font-size: 1.7em;
 }
 
 .contact_description{
-  margin-bottom: 25px;
+  margin-bottom: 3%;
   letter-spacing: .1em; 
 }
 
 .contact__info-block{
-  margin-bottom: 25px;
+  margin-bottom: 3%;
 }
 
 ul.contact__list-phones li{
   color: #fff;
   border-right: 1px solid #fff;
-  padding-right: 30px;
+  padding-right: 3.5%;
   letter-spacing: .2em; 
 }
 
 ul.contact__list-social li img{
-  width: 40px;
+  width: 3.2em;
 }
 
 ul.contact__list-social li{
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 3.5%;
 }
 
 .contact__email{
-  margin-bottom: 50px;
+  margin-bottom: 5%;
   font-size: 1.1em;
   letter-spacing: .2em; 
+}
+
+@media screen and (max-width: 790px) {
+
+  .contact__phones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-left: 9%; 
+  }
+
+  .contact__social{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+
+  ul.contact__list-phones li{
+    border-right: none;
+    justify-content: space-around;
+  }
+
+  .contact__list-phones{
+    width: 250px;
+  }
+
+  .contact__list-social{
+    width: 200px;
+  }
+
+  .centering__block{
+    display: none;
+  }
+  
 }

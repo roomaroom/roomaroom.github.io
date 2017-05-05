@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
 	background-color: black;
+=======
+    background-color: black;
+>>>>>>> c6c875d47173bb89822c4d0a5e12d294b68a9b96
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   margin: 0px 50px;
   min-width: 320px;
@@ -173,44 +177,44 @@ table th {
 #rozporyadok {
     padding-top: 55px;
     min-height: 644px;
-		background: url(../img/photo_4.jpg) no-repeat center;
-		background-size: cover;
-		color: white;
-		font-size: 18px;
-		font-family: Century Gothic;
+        background: url(../img/photo_4.jpg) no-repeat center;
+        background-size: cover;
+        color: white;
+        font-size: 18px;
+        font-family: Century Gothic;
 }
 .metro {
-	  text-align: center;
-		margin-bottom: 50px;
-		text-transform: uppercase;
+      text-align: center;
+        margin-bottom: 50px;
+        text-transform: uppercase;
 }
 .brd {
-	  border: 3px solid gold; /* Параметры границы */
-		padding: 20px 60px 40px 0px;
-		margin: 20px 100px 50px 110px;
+      border: 3px solid gold; /* Параметры границы */
+        padding: 20px 60px 40px 0px;
+        margin: 20px 100px 50px 110px;
 }
 .rectangle {
-	width: 5px;
+    width: 5px;
   height: 5px;
   background: red;
 }
 #aktyvnosti {
     padding-top: 55px;
-		background: url(../img/photo_6.jpg) no-repeat center;
-		background-size: cover;
-		color: white;
-		font-family: Century Gothic;
+        background: url(../img/photo_6.jpg) no-repeat center;
+        background-size: cover;
+        color: white;
+        font-family: Century Gothic;
     min-height: 1000px;
 }
 .aktyv-underline {
-	text-decoration: underline;
-	color: gold;
+    text-decoration: underline;
+    color: gold;
 }
 .ico-vo {
-	margin: 0 auto;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 .circle {
   border-radius: 50%;
@@ -221,39 +225,39 @@ table th {
   position: relative;
 }
 .circle span {
-	position: absolute;
-	top: 70px;
-	left: 25px;
+    position: absolute;
+    top: 70px;
+    left: 25px;
   right: 15px;
 }
 .pos_ten {
-	position: absolute;
-	top: 60px!important;
+    position: absolute;
+    top: 60px!important;
 }
 .image-tam {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 .text_center{
-	font-weight: bold;
-	font-size: 17px;
+    font-weight: bold;
+    font-size: 17px;
 }
 .ringo{
-	margin-top: 70px;
+    margin-top: 70px;
 }
 .rin{
-	margin-top: 25px;
-	padding-bottom: 25px;
+    margin-top: 25px;
+    padding-bottom: 25px;
 }
 .ringos{
-	margin-top: 35px;
+    margin-top: 35px;
 }
 .delta{
-	background: url(../img/photo_6.jpg) no-repeat center;
-	background-size: cover;
-	color: white;
-	font-family: Century Gothic;
-	min-height: 1000px;
+    background: url(../img/photo_6.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    font-family: Century Gothic;
+    min-height: 1000px;
 }
 #tsiny {
     padding-top: 55px;
@@ -270,6 +274,7 @@ table th {
 .contact__section{
   background: url(../img/contact_background.png) no-repeat center;
   opacity: 0.9;
+<<<<<<< HEAD
 }
 
 .contact__headind{
@@ -309,3 +314,44 @@ ul.contact__list-social li{
   font-size: 1.1em;
   letter-spacing: .2em; 
 }
+=======
+}
+
+.contact__headind{
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: .3em;
+  font-size: 1.7em;
+}
+
+.contact_description{
+  margin-bottom: 25px;
+  letter-spacing: .1em; 
+}
+
+.contact__info-block{
+  margin-bottom: 25px;
+}
+
+ul.contact__list-phones li{
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+  letter-spacing: .2em; 
+}
+
+ul.contact__list-social li img{
+  width: 40px;
+}
+
+ul.contact__list-social li{
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.contact__email{
+  margin-bottom: 50px;
+  font-size: 1.1em;
+  letter-spacing: .2em; 
+}
+>>>>>>> c6c875d47173bb89822c4d0a5e12d294b68a9b96

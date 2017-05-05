@@ -2,6 +2,9 @@ body {
 	background-color: black;
     margin: 0px 50px;
 }
+.container {
+    width: auto;
+}
 h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
@@ -22,6 +25,10 @@ h1, h2, h3, h4, h5, h6, p {
     background: url(../img/photo_1.1.jpg) no-repeat;
     min-height: 644px;
     background-size: cover;
+}
+#golovna img {
+    max-width: 100%;
+    height: auto;
 }
 .button-block {
     margin-top: 1.3em;
@@ -265,7 +272,7 @@ table th {
     background-size: cover;
 }
 #kontakty h1 {
-    font-weight: 600;
+    font-family: sans;
     font-size: 5em;
 }    
 #kontakty i {
@@ -292,8 +299,6 @@ table th {
 }
 .text-row9_2 {
     margin-bottom: 2em;
-}
-
 }
 #kontakty img {
     width: 5em;

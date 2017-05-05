@@ -4,6 +4,9 @@ list-style:none;
 margin-left: -40px;
 margin-top:20px;
 }
+.hidden-xs {
+	margin-top: 4%;
+}
 .hidden-xs ul li {
 	padding-right: 0px;
     padding-left: 0px; 

@@ -271,27 +271,59 @@ table th {
 /*------Registration section---------*/
 
 .reg__section{
+  position: relative;
   background: #202020; 
 }
 
-/*.reg__background{
-  position: fixed;
+.reg__background{
+  position: absolute;
   font-size: 115px;
+  opacity: .35;
+  font-weight: bold;
 }
 
 .reg__background.one {
-  top: -41px;
-  left: 516px;
+  top: -40px;
+  left: 300px;
+  letter-spacing: 20px;
 }
 
 .reg__background.two {
-  top: 10px;
+  top: 27px;
   left: 10px;
-}*/
+}
+
+.reg__background.two {
+  top: 27px;
+  left: -20px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fdcb32;
+  opacity: .07;
+  clip: rect(0px,1000px,200px,35px);
+}
 
 .reg__background.three {
-  top: 10px;
-  left: 10px;
+  top: 150px;
+  left: -19px;
+  letter-spacing: 15px;
+  font-size: 130px;
+  clip: rect(0px,1000px,200px,35px);
+}
+
+.reg__background-wrapper{
+  position: relative;
+}
+
+.dotted__circle{
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px dotted #fdcb32;
+  clip: rect(0px,50px,200px,0px);
+  width: 100px;
+  height: 100px;
+  right: -35px;
+  top: -50px;
 }
 
 .reg__heading{

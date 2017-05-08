@@ -20,6 +20,7 @@ ul{
 * {
   box-sizing: border-box;
 }
+
 .centered {
     text-align: center;
 }
@@ -260,6 +261,72 @@ table th {
     background: url(../img/photo_5.jpg) no-repeat center;
     min-height: 1000px;
 }
+
+/*------Registration section---------*/
+
+.reg__section{
+  background: #333333; 
+}
+
+.reg__heading{
+  position: relative;
+  margin-bottom: 2%;
+  font-weight: bold;
+  letter-spacing: .3em;
+  font-size: 3.5em;
+  z-index: 2;
+}
+
+.reg__heading.bordered{
+  top: -70px;
+  left: 3px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fdcb32;
+  z-index: 0;
+}
+
+.reg__column-heading{
+  margin-bottom: -6em;
+}
+
+.reg__discount{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.step__number{
+  color: #fff;
+/*  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+  font-size: 6em;
+}
+
+.step__description{
+  display: inline-block;
+  color: #fdcb32;
+  font-size: 25px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.reg__button{
+  height: 25px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 1px solid #fdcb32;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  height: 30px;
+}
+
+.reg__button a{
+  text-decoration: none;
+  color: #fdcb32;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  padding: 0px 5px;
+}
+
 /*------Photo section------*/
 
 .photo_section{
@@ -275,8 +342,7 @@ table th {
 }
 
 .carousel-inner{
-  max-width: 450px;
-/*  height: 264px;*/
+  max-height: 350px;
   display: inline-block;
   text-align: center;
   -webkit-box-shadow: 7px 7px 59px 30px rgba(0,0,0,0.66);
@@ -310,9 +376,8 @@ ul.thumbnails-carousel li {
 }
 
 li.thumbnails img{
-  width: 150px;
   opacity: 0.8;
-  height: 99px;
+  max-height: 99px;
 }
 
 .col__thumbnail{

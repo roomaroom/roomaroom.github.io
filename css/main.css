@@ -45,25 +45,33 @@ ul{
     padding: 5em 0;
 }
 .img-block1_1 img {
+    margin-top: 20px;
     width: 50%;
+}
+.promo {
+    position: relative;
+    bottom: 0.57em;
 }
 .btn.button-one, .btn.button-two {
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0);
 }
 .btn.button-one {
+    margin-bottom: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     color: orange;
     position: relative;
-    display: flex;
-    align-items: center;
+/*    display: flex;
+    align-items: center;*/
     border: 2px solid #c69f1a;;
 }
 .btn.button-one  
 .but-icon {
-    font-size: 2.5em;
-    padding: 0em 0.5em 0em 0em;
+    font-size: 2.15em;
+    padding: 0em 0.3em 0em 0em;
+    position: relative;
+    top: 0.07em;
 }
 .btn.button-two {
     color: greenyellow;
@@ -80,6 +88,9 @@ ul{
 .text-block2_1 {
     background: #fdcb32;
     height: 100%;
+}
+.text-block2_2 img {
+    margin-top: 20px;
 }
 .text-block2_3 {
     background: #fdcb32;
@@ -114,8 +125,11 @@ table tr, table th, table td {
 
 }
 table th {
-    font-size: 25px;
+    font-size: 18px;
 }
+table tr, table th, table td {
+    font-size: inherit;
+}    
 .table-backdown td {
     padding: 0em;
     margin: 0em;
@@ -170,7 +184,11 @@ table th {
     color: orange;
     text-align: left;
 }
-
+/*@media (max-width: 767px) {
+  .block3_1 p{
+    text-align: center;
+  }
+ } */
 #rozporyadok {
     padding-top: 55px;
     min-height: 644px;

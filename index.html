@@ -312,6 +312,14 @@
     <!-- REGISTRATION SECTION -->
 
     <section class="reg__section">
+        <!-- background text -->
+<!--         <div class="row">
+            <div class="col-md-12">
+                <span class="reg__background one">ALIVE CAMP</span>
+                <span class="reg__background two">РЕЄСТРАЦІЯ</span>
+                <span class="reg__background three">ВАРТІСТЬ</span>
+            </div>
+        </div> -->
         <div class="row centered">
             <div class="col-md-10 col-lg-offset-1 reg__column-heading">
                 <h1 class="reg__heading">
@@ -322,7 +330,7 @@
                 </h1>
             </div>
         </div>
-        <img src="img/fance.jpg" class="img-responsive">
+        <img src="img/fance.png" class="img-responsive">
         <div class="row centered">
             <div class="col-md-10 col-lg-offset-1">
                 <p class="reg__discount">
@@ -332,6 +340,7 @@
         </div>
         <!-- steps -->
         <div class="row centered">
+        <!-- step one -->
             <div class="col-md-3">
                 <div class="reg__tex-wrapper">
                     <span class="step__number">1</span>
@@ -342,8 +351,62 @@
                 </button>
             </div>
             <div class="col-md-1">
-                <img src="img/arrow_step.png" class="img-responsive">
+                <img src="img/arrow_step.png" class="img-responsive reg__arrow">
             </div>
+            <!-- step two -->
+            <div class="col-md-4">
+                <div class="reg__tex-wrapper">
+                    <span class="step__number">2</span>
+                    <span class="step__description">ЗДІЙСНІТЬ </br> ОПЛАТУ</span>
+                    <p class="payment__description-two">
+                        за допомогою одного з доступних варіантів
+                    </p>
+                </div>
+                <button class="reg__button two" type="submit">
+                    <a href="#">ОПЛАТИТИ ОНЛАЙН</a>
+                </button>
+                <br>
+                <button class="reg__button two" type="submit">
+                    <a href="#go">РЕКВІЗИТИ</a>
+                </button>
+            </div>
+            <div class="col-md-1">
+                <img src="img/arrow_step.png" class="img-responsive reg__arrow">
+            </div>
+            <!-- step three -->
+            <div class="col-md-3">
+                <div class="reg__tex-wrapper">
+                    <span class="step__number">3</span>
+                    <span class="step__description">ВІДПРАВТЕ </br> ЧЕК ОПЛАТИ</span>
+                    <p class="payment__description-three">
+                        Отриманий чек про оплату необхідно відсканувати чи сфотографувати в доступній якості та відправити на електронну адресу вказавши своє П.І.Б. та номер заїзду
+                    </p>
+                    <p class="step__three-email">
+                        info@alivecamp.com.ua
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row centered reg_footer">
+            <div class="col-md-10 col-md-offset-1">
+                <a href="list.html" class="reg__thing-list">
+                    ПЕРЕЛІК НЕОБХІДНИХ РЕЧЕЙ
+                </a>
+                <p class="reg__additional-info">
+                    * У вартість входить: оренда локації, харчування, організаційні витрати, подарунки (доїзд/від'їзд не включений в оплату); </br>
+                    ** Реєстрації вважається дійсною лише після виконання всіх трьох кроків, які подані вище;</br>
+                    *** Після реєстрації, протягом трьох днів, на вашу електронну скриньку прийде повідомлення про те, що ви успішно зареєструвались;</br>
+                    **** У разі відмови від участі в таборі, ми можемо повернути вам лише половину коштів. Щоб повернути усі кошти, необхідно знайти на своє місце іншу особу.
+                </p>
+            </div>
+        </div>
+        <!-- modal window test -->
+        <div id="modal_form">
+            <div reg__modal>
+                <span id="modal_close">X</span>
+                <img src="img/reg_info.png">
+            </div>
+            <div id="overlay"></div>
         </div>
     </section>
 
@@ -461,13 +524,19 @@
             <div class="col-md-4 col-sm-5 col-xs-10 contact__social">
                 <ul class="contact__list-social">
                   <li class="vk">
-                    <a href="#"><img src="img/vk-social-network-logo.png"></a>
+                    <a href="https://vk.com/alivecamps">
+                        <img src="img/vk-social-network-logo.png">
+                    </a>
                   </li>
                   <li class="facebook">
-                    <a href="#"><img src="img/facebook-logo-button.png"></a>
+                    <a href="https://facebook.com/alivecamps">
+                        <img src="img/facebook-logo-button.png">
+                    </a>
                   </li>
                   <li class="instagram">
-                    <a href="#"><img src="img/icon-1562139_960_720.png"></a>
+                    <a href="https://instagram.com/alivecamps">
+                        <img src="img/icon-1562139_960_720.png">
+                    </a>
                   </li>
                 </ul>
             </div>
@@ -483,6 +552,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal_window.js"></script>
 </body>
 </html>
 

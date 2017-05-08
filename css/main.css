@@ -4,8 +4,14 @@ body {
   margin: 0px 50px;
   min-width: 320px;
 }
+
+/*@font-face {
+  font-family: CenturyGothic;
+  src: url(fonts/gothic.ttf);
+}*/
+
 h1, h2, h3, h4, h5, h6, p {
-    color: white;
+  color: white;
 }
 
 ul li {
@@ -265,14 +271,34 @@ table th {
 /*------Registration section---------*/
 
 .reg__section{
-  background: #333333; 
+  background: #202020; 
+}
+
+/*.reg__background{
+  position: fixed;
+  font-size: 115px;
+}
+
+.reg__background.one {
+  top: -41px;
+  left: 516px;
+}
+
+.reg__background.two {
+  top: 10px;
+  left: 10px;
+}*/
+
+.reg__background.three {
+  top: 10px;
+  left: 10px;
 }
 
 .reg__heading{
   position: relative;
   margin-bottom: 2%;
   font-weight: bold;
-  letter-spacing: .3em;
+  letter-spacing: .25em;
   font-size: 3.5em;
   z-index: 2;
 }
@@ -303,9 +329,11 @@ table th {
 .step__description{
   display: inline-block;
   color: #fdcb32;
-  font-size: 25px;
+  font-size: 27px;
   text-align: left;
   font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 38px;
 }
 
 .reg__button{
@@ -325,6 +353,132 @@ table th {
   letter-spacing: 0.1em;
   font-size: 1.2em;
   padding: 0px 5px;
+}
+
+.reg__arrow{
+  height: 170px;
+}
+
+.payment__description-two{
+  font-size: 12px;
+  color: #fdcb32;
+  margin-top: -26px;
+}
+
+.reg__button.two{
+  width: 175px;
+  margin-bottom: 10px;
+}
+
+.reg__button.two a{
+  letter-spacing: .05em;
+  font-size: 1em;
+}
+
+/*Modal window start*/
+
+#modal_form {
+  width: 300px; 
+  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%; /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+  z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position:fixed; /* всегдa перекрывaет весь сaйт */
+  background-color:#000; /* чернaя */
+  opacity:0.8; /* нo немнoгo прoзрaчнa */
+  -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+  filter:alpha(opacity=80);
+  width:100%; 
+  height:100%; /* рaзмерoм вo весь экрaн */
+  top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left:0;
+  cursor:pointer;
+  display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+/*Modal window end*/
+
+.payment__description-three{
+  font-size: 12px;
+  color: #fdcb32;
+  margin-top: -26px;
+  margin-bottom: 0px;
+}
+
+.step__three-email{
+  color: #fdcb32;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.reg__thing-list{
+  color: #fdcb32;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.reg__thing-list:hover{
+  color: #fdcb32;
+}
+
+.reg__additional-info{
+  color: #fdcb32;
+  font-size: 10px;
+  margin-bottom: 2em;
+}
+
+/*list page styles*/
+.thing__list-block{
+  margin-top: 5%;
+}
+
+.thing__list-block > h1{
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.list__items{
+  color: #fdcb32;
+  text-align: left;
+  font-size: 18px;
+}
+
+.list__back > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fdcb32;
+  padding: 5px 15px;
+}
+
+.list__back > a:hover {
+  padding: 7px 20px;
 }
 
 /*------Photo section------*/

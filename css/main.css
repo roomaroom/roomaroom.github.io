@@ -4,8 +4,14 @@ body {
   margin: 0px 50px;
   min-width: 320px;
 }
+
+/*@font-face {
+  font-family: CenturyGothic;
+  src: url(fonts/gothic.ttf);
+}*/
+
 h1, h2, h3, h4, h5, h6, p {
-    color: white;
+  color: white;
 }
 
 ul li {
@@ -20,6 +26,7 @@ ul{
 * {
   box-sizing: border-box;
 }
+
 .centered {
     text-align: center;
 }
@@ -260,6 +267,274 @@ table th {
     background: url(../img/photo_5.jpg) no-repeat center;
     min-height: 1000px;
 }
+
+/*------Registration section---------*/
+
+.reg__section{
+  position: relative;
+  background: #202020;
+  overflow: hidden; 
+}
+
+.reg__background{
+  position: absolute;
+  font-size: 115px;
+  opacity: .35;
+  font-weight: bold;
+}
+
+.reg__background.one {
+  top: -40px;
+  left: 280px;
+  letter-spacing: 20px;
+}
+
+.reg__background.two {
+  top: 27px;
+  left: 10px;
+}
+
+.reg__background.two {
+  top: 27px;
+  left: -20px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fdcb32;
+  opacity: .07;
+  clip: rect(0px,1000px,200px,35px);
+}
+
+.reg__background.three {
+  top: 150px;
+  left: -19px;
+  letter-spacing: 15px;
+  font-size: 130px;
+  clip: rect(0px,1000px,200px,35px);
+}
+
+.reg__background-wrapper{
+  position: relative;
+}
+
+.dotted__circle{
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px dotted #fdcb32;
+  clip: rect(0px,50px,200px,0px);
+  width: 100px;
+  height: 100px;
+  right: -35px;
+  top: -50px;
+}
+
+.reg__heading{
+  position: relative;
+  margin-bottom: 2%;
+  font-weight: bold;
+  letter-spacing: .25em;
+  font-size: 3.5em;
+  z-index: 2;
+}
+
+.reg__heading.bordered{
+  top: -70px;
+  left: 3px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fdcb32;
+  z-index: 0;
+}
+
+.reg__column-heading{
+  margin-bottom: -6em;
+}
+
+.reg__discount{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.step__number{
+  color: #fff;
+/*  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
+  font-size: 6em;
+}
+
+.step__description{
+  display: inline-block;
+  color: #fdcb32;
+  font-size: 27px;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 38px;
+}
+
+.reg__button{
+  height: 25px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 1px solid #fdcb32;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  height: 30px;
+}
+
+.reg__button a{
+  text-decoration: none;
+  color: #fdcb32;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  padding: 0px 5px;
+}
+
+.reg__arrow{
+  height: 170px;
+}
+
+.payment__description-two{
+  font-size: 12px;
+  color: #fdcb32;
+  margin-top: -26px;
+}
+
+.reg__button.two{
+  width: 175px;
+  margin-bottom: 10px;
+}
+
+.reg__button.two a{
+  letter-spacing: .05em;
+  font-size: 1em;
+}
+
+/*Modal window start*/
+
+#modal_form {
+  width: 500px; 
+  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 1px #fdcb32 solid;
+  background: #202020;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%; /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -250px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  color: #fff;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+  z-index:0; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position:fixed; /* всегдa перекрывaет весь сaйт */
+  background-color:#000; /* чернaя */
+  opacity:0.8; /* нo немнoгo прoзрaчнa */
+  -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+  filter:alpha(opacity=80);
+  width:100%; 
+  height:100%; /* рaзмерoм вo весь экрaн */
+  top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left:0;
+  cursor:pointer;
+  display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+.modal__heading{
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.modal__description{
+  display: inline-block;
+  color: #fdcb32;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.modal__number{
+  color: #fdcb32;
+  font-size: 28px;
+  font-weight: bold; 
+}
+/*Modal window end*/
+
+.payment__description-three{
+  font-size: 12px;
+  color: #fdcb32;
+  margin-top: -26px;
+  margin-bottom: 0px;
+}
+
+.step__three-email{
+  color: #fdcb32;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.reg__thing-list{
+  color: #fdcb32;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.reg__thing-list:hover{
+  color: #fdcb32;
+}
+
+.reg__additional-info{
+  color: #fdcb32;
+  font-size: 10px;
+  margin-bottom: 2em;
+}
+
+/*list page styles*/
+.thing__list-block{
+  margin-top: 5%;
+}
+
+.thing__list-block > h1{
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.list__items{
+  color: #fdcb32;
+  text-align: left;
+  font-size: 18px;
+}
+
+.list__back > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fdcb32;
+  padding: 5px 15px;
+}
+
+.list__back > a:hover {
+  padding: 7px 20px;
+}
+
 /*------Photo section------*/
 
 .photo_section{
@@ -275,8 +550,7 @@ table th {
 }
 
 .carousel-inner{
-  max-width: 450px;
-/*  height: 264px;*/
+  max-height: 350px;
   display: inline-block;
   text-align: center;
   -webkit-box-shadow: 7px 7px 59px 30px rgba(0,0,0,0.66);
@@ -310,9 +584,8 @@ ul.thumbnails-carousel li {
 }
 
 li.thumbnails img{
-  width: 150px;
   opacity: 0.8;
-  height: 99px;
+  max-height: 99px;
 }
 
 .col__thumbnail{

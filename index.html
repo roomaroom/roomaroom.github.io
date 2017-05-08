@@ -316,7 +316,7 @@
         <div class="row">
             <div class="col-md-12 reg__background-wrapper">
                 <div class="dotted__circle"></div>
-                <span class="reg__background one">ALIVE CAMP</span>
+                <span class="reg__background one"><nobr>ALIVE CAMP</nobr></span>
                 <span class="reg__background two">РЕЄСТРАЦІЯ</span>
                 <span class="reg__background three">ВАРТІСТЬ</span>
             </div>
@@ -368,7 +368,7 @@
                 </button>
                 <br>
                 <button class="reg__button two" type="submit">
-                    <a href="#go">РЕКВІЗИТИ</a>
+                    <a href="" id="go">РЕКВІЗИТИ</a>
                 </button>
             </div>
             <div class="col-md-1">
@@ -405,10 +405,18 @@
         <div id="modal_form">
             <div reg__modal>
                 <span id="modal_close">X</span>
-                <img src="img/reg_info.png">
+                <div class="row centered">
+                    <div class="col-md-10 col-md-offset-1">
+                        <span class="modal__heading">РЕКВІЗИТИ</span>
+                        </br>
+                        <span class="modal__description">Необхідно переказати відповідну суму коштів на картку ПриватБанку:</span>
+                        </br>
+                        <span class="modal__number">5168 7556 3310 3490 - </br> Андрушків Олег Юрійович</span>
+                    </div>
+                </div>
             </div>
-            <div id="overlay"></div>
         </div>
+        <div id="overlay"></div>
     </section>
 
     <!-- PHOTO SECTION -->
@@ -552,8 +560,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/modal_window.js"></script>
+<!--     <script src="js/slider.js"></script>
+    <script src="../modal_window"></script> -->
+    <script type="text/javascript">
+        $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
+            $('a#go').click( function(event){ // лoвим клик пo ссылки с id="go"
+                event.preventDefault(); // выключaем стaндaртную рoль элементa
+                $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+                    function(){ // пoсле выпoлнения предъидущей aнимaции
+                        $('#modal_form') 
+                            .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+                            .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+                });
+            });
+            /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+            $('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+                $('#modal_form')
+                    .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+                        function(){ // пoсле aнимaции
+                            $(this).css('display', 'none'); // делaем ему display: none;
+                            $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                        }
+                    );
+            });
+        });
+    </script>
 </body>
 </html>
 

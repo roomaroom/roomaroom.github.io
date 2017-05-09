@@ -33,6 +33,7 @@
                 </div>
             </div>
     </nav>
+    <a name="golovna_anchor" class="anchor"></a>
     <div id="golovna">
         <div class="container">
             <div class="row centered">
@@ -48,7 +49,12 @@
                     <button type="button" class="btn btn-default btn-lg button-one" aria-label="Left Align">
                         <span class="glyphicon glyphicon-play-circle but-icon" aria-hidden="true"></span><strong>ПРОМО</strong></button>
                 </div>
-                <div class="col-lg-3"><button type="button" class="btn btn-default btn-lg button-two">ЗАРЕЄСТРУВАТИСЯ</button></div>
+                <div class="col-lg-3">
+                    <a href="#reg__section" rel="nofollow">
+                      <button type="button" class="btn btn-default btn-lg button-two">ЗАРЕЄСТРУВАТИСЯ
+                      </button>
+                    </a>
+                </div>
                 <div class="col-lg-3">
 <!--                     <button type="button" class="btn btn-default btn-lg button-two">
                         <span class="glyphicon glyphicon-play-circle but-icon" aria-hidden="true"></span> ПРОМО
@@ -57,6 +63,7 @@
             </div>
         </div>
     </div>
+    <a name="pro_tabir_anchor" class="anchor"></a>
     <div id="pro_tabir">
         <div class="container-fluid">
             <div class="row centered">
@@ -122,6 +129,7 @@
             </div>
         </div>
     </div>
+    <a name="vas_ochikuye_anchor" class="anchor"></a>
     <div id="vas_ochikuye">
         <div class="container">
             <div class="row centered">
@@ -175,7 +183,7 @@
             </div>
         </div>
     </div>
-
+  <a name="rozporyadok_anchor" class="anchor"></a>
     <div id="rozporyadok">
 			<div class="col-sm-12">
 				<div class="brd">
@@ -358,7 +366,7 @@
                     </p>
                 </div>
                 <button class="reg__button two" type="submit">
-                    <a href="#">ОПЛАТИТИ ОНЛАЙН</a>
+                    <a href="https://www.liqpay.com/ru/checkout/card/alivecamp">ОПЛАТИТИ ОНЛАЙН</a>
                 </button>
                 <br>
                 <button class="reg__button two" type="submit">
@@ -396,7 +404,7 @@
             </div>
         </div>
         <!-- modal window test -->
-        <div class="oleg_info"> 
+        <div class="oleg_info">
             <div id="modal_form">
                 <div reg__modal>
                     <span id="modal_close">X</span>
@@ -423,22 +431,22 @@
                                 Прізвище:
                             </span> </br>
                             <input type="text" name="lastname"></br>
-                            
+
                             <span class="email__modal-text">
-                                Ім'я: 
+                                Ім'я:
                             </span></br>
                             <input type="text" name="firstname"></br>
-                            
+
                             <span class="email__modal-text">
                                 Телефон:
                             </span></br>
                             <input type="tel" name="phone" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
-                            
+
                             <span class="email__modal-text">
                                 E-mail:
                             </span></br>
                             <input type="email" name="email"></br>
-                            
+
                             <span class="email__modal-text">
                                 Вибір заїзду:
                             </span></br>
@@ -502,7 +510,7 @@
 
             <div class="row row__thumbnail">
                 <div class="col-md-12 col__thumbnail">
-                    <!-- Thumbnails --> 
+                    <!-- Thumbnails -->
                     <ul class="thumbnails-carousel">
                         <li class="thumbnails">
                             <img src="img/TR_AliveCamp-87.jpg" alt="1_tn.jpg">
@@ -599,16 +607,16 @@
                 event.preventDefault();
                 $('#overlay').fadeIn(400,
                     function(){
-                        $('#modal_form') 
+                        $('#modal_form')
                             .css('display', 'block')
                             .animate({opacity: 1, top: '50%'}, 200);
                 });
             });
-  
+
             $('#modal_close, #overlay').click( function(){
                 $('#modal_form')
                     .animate({opacity: 0, top: '45%'}, 200,
-                        function(){ 
+                        function(){
                             $(this).css('display', 'none');
                             $('#overlay').fadeOut(400);
                         }
@@ -619,16 +627,16 @@
                 event.preventDefault();
                 $('#overlay').fadeIn(400,
                     function(){
-                        $('#email_modal') 
+                        $('#email_modal')
                             .css('display', 'block')
                             .animate({opacity: 1, top: '50%'}, 200);
                 });
             });
-  
+
             $('#modal_close, #overlay').click( function(){
                 $('#email_modal')
                     .animate({opacity: 0, top: '45%'}, 200,
-                        function(){ 
+                        function(){
                             $(this).css('display', 'none');
                             $('#overlay').fadeOut(400);
                         }

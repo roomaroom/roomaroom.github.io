@@ -223,13 +223,24 @@ table th {
     }
 }
 #aktyvnosti {
-		padding-top: 55px;
+		padding-top: 0px;
 		background: url(../img/fon12.jpg) no-repeat center;
 		background-size: cover;
 		color: white;
 		font-family: Century Gothic;
     min-height: 500px;
+    z-index: 1;
 
+}
+/*.dotted {
+   background: url(../img/border.png) no-repeat center;
+   z-index: 2;
+   position: relative;
+   bottom: 20px;
+   top: 100px;
+   /*padding-top: 165px;
+   padding-left: 55px;
+   padding-right: 55px;*/
 }
 /*.dotted {
     border-top: 4px dotted orange;
@@ -244,13 +255,14 @@ table th {
    margin: 0 45px;
 }*/
 .aktyv{
-    color: white;
+    color: gold;
     position: relative;
     bottom: 20px;
+    font-weight: bold;
 }
 .aktyv-underline {
   text-decoration: underline;
-	color: gold;
+	color: white;
 }
 .ico-vo {
 	margin: 0 auto;
@@ -324,6 +336,7 @@ table th {
 }
 .delta{
 	background: url(../img/fon124.jpg) no-repeat center;
+  z-index: 1;
 	background-size: cover;
 	color: white;
 	font-family: Century Gothic;

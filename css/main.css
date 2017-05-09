@@ -173,44 +173,83 @@ table th {
 #rozporyadok {
     padding-top: 55px;
     min-height: 644px;
-        background: url(../img/photo_4.jpg) no-repeat center;
-        background-size: cover;
-        color: white;
-        font-size: 18px;
-        font-family: Century Gothic;
+		background: url(../img/photo_4.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+		font-size: 18px;
+		font-family: Century Gothic;
 }
 .metro {
-      text-align: center;
-        margin-bottom: 50px;
-        text-transform: uppercase;
+	  text-align: center;
+		margin-bottom: 50px;
+		text-transform: uppercase;
 }
 .brd {
-      border: 3px solid gold; /* Параметры границы */
-        padding: 20px 60px 40px 0px;
-        margin: 20px 100px 50px 110px;
+	  border: 3px solid gold; /* Параметры границы */
+		padding: 20px 50px 300px 50px;
+		margin: 20px 100px 50px;
 }
-.rectangle {
-    width: 5px;
-  height: 5px;
-  background: red;
+@media (max-width: 768px) {
+    #rozporyadok{
+      padding-top: 35px;
+    }
+    .metro{
+      margin-bottom: 35px;
+    }
+    .brd {
+     font-size: 17px;
+     padding: 5px 0px 300px 0px;
+     margin: 20px 15px 0px 15px;
+    }
+}
+@media (max-width: 425px) {
+    #rozporyadok{
+      padding-top: 35px;
+    }
+    .brd {
+     font-size: 16px;
+     padding: 5px 0px 10px 0px;
+     margin: 10px 15px 0px 15px;
+    }
+    .metro{
+      margin-bottom: 25px;
+    }
 }
 #aktyvnosti {
-    padding-top: 55px;
-        background: url(../img/photo_6.jpg) no-repeat center;
-        background-size: cover;
-        color: white;
-        font-family: Century Gothic;
-    min-height: 1000px;
+		padding-top: 55px;
+		background: url(../img/fon12.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+		font-family: Century Gothic;
+    min-height: 500px;
+
+}
+/*.dotted {
+    border-top: 4px dotted orange;
+    border-left: 4px dotted orange;
+    border-right: 4px dotted orange;
+    margin: 0 45px;
+}
+.dottedin{
+   border-bottom: 4px dotted orange;
+   border-left: 4px dotted orange;
+   border-right: 4px dotted orange;
+   margin: 0 45px;
+}*/
+.aktyv{
+    color: white;
+    position: relative;
+    bottom: 20px;
 }
 .aktyv-underline {
-    text-decoration: underline;
-    color: gold;
+  text-decoration: underline;
+	color: gold;
 }
 .ico-vo {
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 .circle {
   border-radius: 50%;
@@ -221,39 +260,85 @@ table th {
   position: relative;
 }
 .circle span {
-    position: absolute;
-    top: 70px;
-    left: 25px;
-  right: 15px;
+	position: absolute;
+	top: 65px;
+	left: 25px;
+  right: 25px;
 }
 .pos_ten {
-    position: absolute;
-    top: 60px!important;
+	position: absolute;
+	top: 60px!important;
 }
 .image-tam {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 .text_center{
-    font-weight: bold;
-    font-size: 17px;
+	font-weight: bold;
+	font-size: 17px;
 }
 .ringo{
-    margin-top: 70px;
+	margin-top: 70px;
 }
 .rin{
-    margin-top: 25px;
-    padding-bottom: 25px;
+	margin-top: 25px;
+	padding-bottom: 25px;
 }
 .ringos{
-    margin-top: 35px;
+	margin-top: 35px;
+}
+.pos{
+  font-size: strong;
+  font-size: 17px;
+}
+.hb{
+  position: absolute;
+	top: 60px!important;
+}
+.qu{
+  position: absolute;
+	top: 60px!important;
+}
+.post {
+  position: absolute;
+	top: 70px!important;
+}
+.dix{
+  position: absolute;
+	top: 60px!important;
+}
+.ch{
+  position: absolute;
+	top: 60px!important;
+}
+.qu{
+  position: absolute;
+	top: 50px!important;
 }
 .delta{
-    background: url(../img/photo_6.jpg) no-repeat center;
-    background-size: cover;
-    color: white;
-    font-family: Century Gothic;
-    min-height: 1000px;
+	background: url(../img/fon.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	font-family: Century Gothic;
+	min-height: 500px;
+}
+@media (max-width: 768px) {
+  .circle span {
+  	position: absolute;
+  	top: 30px!important;
+  	left: 15px;
+    right: 15px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .circle span {
+  	position: absolute;
+  	top: 10px!important;
+  	left: 5px;
+    right: 5px;
+    font-size: 10px;
+  }
 }
 #tsiny {
     padding-top: 55px;
@@ -281,7 +366,7 @@ table th {
 
 .contact_description{
   margin-bottom: 25px;
-  letter-spacing: .1em; 
+  letter-spacing: .1em;
 }
 
 .contact__info-block{
@@ -292,7 +377,7 @@ ul.contact__list-phones li{
   color: #fff;
   border-right: 1px solid #fff;
   padding-right: 30px;
-  letter-spacing: .2em; 
+  letter-spacing: .2em;
 }
 
 ul.contact__list-social li img{
@@ -307,5 +392,5 @@ ul.contact__list-social li{
 .contact__email{
   margin-bottom: 50px;
   font-size: 1.1em;
-  letter-spacing: .2em; 
+  letter-spacing: .2em;
 }

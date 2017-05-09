@@ -1,9 +1,9 @@
 body {
   background-color: black;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  margin: 0px 50px;
   margin-top: 50px;
   min-width: 320px;
+  width: 100%;
 }
 
 /*@font-face {
@@ -51,10 +51,10 @@ a.anchor:before{
 }
 /*1 BLOCK*/
 #golovna {
-    padding-top: 55px;
-    background: url(../img/photo_1.1.jpg) no-repeat;
-    min-height: 644px;
-    background-size: cover;
+  padding-top: 55px;
+  background: url(../img/photo_1.1.jpg) no-repeat;
+  min-height: 644px;
+  background-size: cover;
 }
 .btn.button-one, .btn.button-two {
     font-size: 1em;

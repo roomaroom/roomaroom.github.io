@@ -1,7 +1,10 @@
 body {
   background-color: black;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  margin: 0px 0px;
+
+  margin: 0px 50px;
+  margin-top: 50px;
+
   min-width: 320px;
 }
 
@@ -27,20 +30,30 @@ ul{
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 .navbar-nav {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .navbar-nav > li {
   float: none;
   display: inline-block;
 }
+
+a.anchor:before{
+  display: block; 
+  content: " "; 
+  margin-top: -50px; 
+  height: 50px; 
+  visibility: hidden; 
+}
+
+}
 /*1 BLOCK*/
-#golovna {
+.main-background {
     padding-top: 55px;
-    background: url(../img/photo_1.1.jpg) no-repeat;
+    background: url(../img/photo_1.jpg) no-repeat;
     background-size: cover;
     min-height: 100%;
 }
@@ -203,44 +216,83 @@ table tr, table th, table td {
 #rozporyadok {
     padding-top: 55px;
     min-height: 644px;
-        background: url(../img/photo_4.jpg) no-repeat center;
-        background-size: cover;
-        color: white;
-        font-size: 18px;
-        font-family: Century Gothic;
+		background: url(../img/photo_4.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+		font-size: 18px;
+		font-family: Century Gothic;
 }
 .metro {
-      text-align: center;
-        margin-bottom: 50px;
-        text-transform: uppercase;
+	  text-align: center;
+		margin-bottom: 50px;
+		text-transform: uppercase;
 }
 .brd {
-      border: 3px solid gold; /* Параметры границы */
-        padding: 20px 60px 40px 0px;
-        margin: 20px 100px 50px 110px;
+	  border: 3px solid gold; /* Параметры границы */
+		padding: 20px 50px 300px 50px;
+		margin: 20px 100px 50px;
 }
-.rectangle {
-    width: 5px;
-  height: 5px;
-  background: red;
+@media (max-width: 768px) {
+    #rozporyadok{
+      padding-top: 35px;
+    }
+    .metro{
+      margin-bottom: 35px;
+    }
+    .brd {
+     font-size: 17px;
+     padding: 5px 0px 300px 0px;
+     margin: 20px 15px 0px 15px;
+    }
+}
+@media (max-width: 425px) {
+    #rozporyadok{
+      padding-top: 35px;
+    }
+    .brd {
+     font-size: 16px;
+     padding: 5px 0px 10px 0px;
+     margin: 10px 15px 0px 15px;
+    }
+    .metro{
+      margin-bottom: 25px;
+    }
 }
 #aktyvnosti {
-    padding-top: 55px;
-        background: url(../img/photo_6.jpg) no-repeat center;
-        background-size: cover;
-        color: white;
-        font-family: Century Gothic;
-    min-height: 1000px;
+		padding-top: 55px;
+		background: url(../img/fon12.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+		font-family: Century Gothic;
+    min-height: 500px;
+
+}
+/*.dotted {
+    border-top: 4px dotted orange;
+    border-left: 4px dotted orange;
+    border-right: 4px dotted orange;
+    margin: 0 45px;
+}
+.dottedin{
+   border-bottom: 4px dotted orange;
+   border-left: 4px dotted orange;
+   border-right: 4px dotted orange;
+   margin: 0 45px;
+}*/
+.aktyv{
+    color: white;
+    position: relative;
+    bottom: 20px;
 }
 .aktyv-underline {
-    text-decoration: underline;
-    color: gold;
+  text-decoration: underline;
+	color: gold;
 }
 .ico-vo {
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 .circle {
   border-radius: 50%;
@@ -251,39 +303,85 @@ table tr, table th, table td {
   position: relative;
 }
 .circle span {
-    position: absolute;
-    top: 70px;
-    left: 25px;
-  right: 15px;
+	position: absolute;
+	top: 65px;
+	left: 25px;
+  right: 25px;
 }
 .pos_ten {
-    position: absolute;
-    top: 60px!important;
+	position: absolute;
+	top: 60px!important;
 }
 .image-tam {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 .text_center{
-    font-weight: bold;
-    font-size: 17px;
+	font-weight: bold;
+	font-size: 17px;
 }
 .ringo{
-    margin-top: 70px;
+	margin-top: 70px;
 }
 .rin{
-    margin-top: 25px;
-    padding-bottom: 25px;
+	margin-top: 25px;
+	padding-bottom: 25px;
 }
 .ringos{
-    margin-top: 35px;
+	margin-top: 35px;
+}
+.pos{
+  font-size: strong;
+  font-size: 17px;
+}
+.hb{
+  position: absolute;
+	top: 60px!important;
+}
+.qu{
+  position: absolute;
+	top: 60px!important;
+}
+.post {
+  position: absolute;
+	top: 70px!important;
+}
+.dix{
+  position: absolute;
+	top: 60px!important;
+}
+.ch{
+  position: absolute;
+	top: 60px!important;
+}
+.qu{
+  position: absolute;
+	top: 50px!important;
 }
 .delta{
-    background: url(../img/photo_6.jpg) no-repeat center;
-    background-size: cover;
-    color: white;
-    font-family: Century Gothic;
-    min-height: 1000px;
+	background: url(../img/fon124.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	font-family: Century Gothic;
+	min-height: 500px;
+}
+@media (max-width: 768px) {
+  .circle span {
+  	position: absolute;
+  	top: 30px!important;
+  	left: 15px;
+    right: 15px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .circle span {
+  	position: absolute;
+  	top: 110px!important;
+  	left: 25px;
+    right: 25px;
+    font-size: 28px;
+  }
 }
 #tsiny {
     padding-top: 55px;
@@ -294,7 +392,7 @@ table tr, table th, table td {
 .reg__section{
   position: relative;
   background: #202020;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .reg__background{
@@ -431,24 +529,24 @@ table tr, table th, table td {
 
 /*Modal window start*/
 
-#modal_form {
+#modal_form, #email_modal {
   width: 500px; 
-  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+  height: 320px;
   border-radius: 5px;
   border: 1px #fdcb32 solid;
   background: #202020;
-  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-  left: 50%; /* пoлoвинa экрaнa слевa */
+  position: fixed;
+  top: 45%;
+  left: 50%;
   margin-top: -150px;
-  margin-left: -250px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-  z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  margin-left: -250px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
   padding: 20px 10px;
 }
-/* Кнoпкa зaкрыть для тех ктo в тaнке) */
-#modal_form #modal_close {
+
+#modal_form #modal_close, #email_modal #modal_close {
   color: #fff;
   width: 21px;
   height: 21px;
@@ -458,20 +556,20 @@ table tr, table th, table td {
   cursor: pointer;
   display: block;
 }
-/* Пoдлoжкa */
+
 #overlay {
-  z-index:0; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-  position:fixed; /* всегдa перекрывaет весь сaйт */
-  background-color:#000; /* чернaя */
-  opacity:0.8; /* нo немнoгo прoзрaчнa */
-  -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+  z-index:0;
+  position:fixed;
+  background-color:#000;
+  opacity:0.8; 
+  -moz-opacity:0.8;
   filter:alpha(opacity=80);
   width:100%; 
-  height:100%; /* рaзмерoм вo весь экрaн */
-  top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  height:100%;
+  top:0;
   left:0;
   cursor:pointer;
-  display:none; /* в oбычнoм сoстoянии её нет) */
+  display:none;
 }
 
 .modal__heading{
@@ -492,8 +590,27 @@ table tr, table th, table td {
 .modal__number{
   color: #fdcb32;
   font-size: 28px;
-  font-weight: bold; 
+  font-weight: bold;
 }
+
+/*Modal Email*/
+
+.email__modal-text{
+  color: #fdcb32;
+}
+
+.email__submit{
+  background: transparent;
+  border: 1px solid #fdcb32;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.email__submit:hover {
+  padding: 7px 20px;
+}
+
+
 /*Modal window end*/
 
 .payment__description-three{
@@ -530,7 +647,7 @@ table tr, table th, table td {
 
 /*list page styles*/
 .thing__list-block{
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .thing__list-block > h1{
@@ -550,10 +667,20 @@ table tr, table th, table td {
   color: #fff;
   border: 1px solid #fdcb32;
   padding: 5px 15px;
+  z-index: 2;
 }
 
 .list__back > a:hover {
   padding: 7px 20px;
+}
+
+.list__logo{
+  position: absolute;
+  height: 150px;
+  bottom: 50px;
+  right: 50px;
+  opacity: .6;
+  z-index: 1;
 }
 
 /*------Photo section------*/
@@ -592,8 +719,8 @@ ul.thumbnails-carousel .center {
 }
 
 ul.thumbnails-carousel li {
-  float: left;
-  cursor: pointer;
+ display: inline-block;
+/*  cursor: pointer;*/
 }
 
 .controls-background-reset {
@@ -604,7 +731,7 @@ ul.thumbnails-carousel li {
   bottom: 70px;
 }
 
-li.thumbnails img{
+.thumbnails img{
   opacity: 0.8;
   max-height: 99px;
 }
@@ -644,8 +771,10 @@ li.thumbnails img{
 }
 
 .contact_description{
+  margin-bottom: 25px;
+  letter-spacing: .1em;
   margin-bottom: 3%;
-  letter-spacing: .1em; 
+  letter-spacing: .1em;
 }
 
 .contact__info-block{
@@ -656,7 +785,7 @@ ul.contact__list-phones li{
   color: #fff;
   border-right: 1px solid #fff;
   padding-right: 3.5%;
-  letter-spacing: .2em; 
+  letter-spacing: .2em;
 }
 
 ul.contact__list-social li img{
@@ -671,7 +800,10 @@ ul.contact__list-social li{
 .contact__email{
   margin-bottom: 5%;
   font-size: 1.1em;
-  letter-spacing: .2em; 
+  letter-spacing: .2em;
+}
+
+  letter-spacing: .2em;
 }
 
 @media screen and (max-width: 790px) {
@@ -680,7 +812,7 @@ ul.contact__list-social li{
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
-    margin-left: 9%; 
+    margin-left: 9%;
   }
 
   .contact__social{
@@ -705,5 +837,11 @@ ul.contact__list-social li{
   .centering__block{
     display: none;
   }
-  
+
+}
+.main-background {
+    padding-top: 55px;
+    background: url(../img/photo_1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100%;
 }

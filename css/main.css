@@ -28,15 +28,25 @@ ul{
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 .navbar-nav {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .navbar-nav > li {
   float: none;
   display: inline-block;
+}
+
+a.anchor:before{
+  display: block; 
+  content: " "; 
+  margin-top: -50px; 
+  height: 50px; 
+  visibility: hidden; 
+}
+
 }
 /*1 BLOCK*/
 #golovna {
@@ -571,8 +581,8 @@ ul.thumbnails-carousel .center {
 }
 
 ul.thumbnails-carousel li {
-  float: left;
-  cursor: pointer;
+ display: inline-block;
+/*  cursor: pointer;*/
 }
 
 .controls-background-reset {
@@ -583,7 +593,7 @@ ul.thumbnails-carousel li {
   bottom: 70px;
 }
 
-li.thumbnails img{
+.thumbnails img{
   opacity: 0.8;
   max-height: 99px;
 }

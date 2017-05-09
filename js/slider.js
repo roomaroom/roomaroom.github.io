@@ -1,23 +1,56 @@
-jQuery(document).ready(function($) {
- 
-        $('#myCarousel').carousel({
-                interval: 5000
+;(function(window, $, undefined) {
+
+    var conf = {
+        center: true,
+        backgroundControl: false
+    };
+
+    var cache = {
+        $carouselContainer: $('.thumbnails-carousel').parent(),
+        $thumbnailsLi: $('.thumbnails-carousel li'),
+        $controls: $('.thumbnails-carousel').parent().find('.carousel-control')
+    };
+
+    function init() {
+        cache.$carouselContainer.find('ol.carousel-indicators').addClass('indicators-fix');
+        cache.$thumbnailsLi.first().addClass('active-thumbnail');
+
+        if(!conf.backgroundControl) {
+            cache.$carouselContainer.find('.carousel-control').addClass('controls-background-reset');
+        }
+        else {
+            cache.$controls.height(cache.$carouselContainer.find('.carousel-inner').height());
+        }
+
+        if(conf.center) {
+            cache.$thumbnailsLi.wrapAll("<div class='center clearfix'></div>");
+        }
+    }
+
+    function refreshOpacities(domEl) {
+        cache.$thumbnailsLi.removeClass('active-thumbnail');
+        cache.$thumbnailsLi.eq($(domEl).index()).addClass('active-thumbnail');
+    }   
+
+    function bindUiActions() {
+        cache.$carouselContainer.on('slide.bs.carousel', function(e) {
+            refreshOpacities(e.relatedTarget);
         });
- 
-        $('#carousel-text').html($('#slide-content-0').html());
- 
-        //Handles the carousel thumbnails
-        $('[id^=carousel-selector-]').click( function(){
-                var id_selector = $(this).attr("id");
-                var id = id_selector.substr(id_selector.length -1);
-                var id = parseInt(id);
-                $('#myCarousel').carousel(id);
+
+        cache.$thumbnailsLi.click(function(){
+            cache.$carouselContainer.carousel($(this).index());
         });
- 
- 
-        // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-                 var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
-        });
-});
+    }
+
+    $.fn.thumbnailsCarousel = function(options) {
+        conf = $.extend(conf, options);
+
+        init();
+        bindUiActions();
+
+        return this;
+    }
+
+})(window, jQuery);
+
+$('.thumbnails-carousel').thumbnailsCarousel();

@@ -10,7 +10,6 @@
     <link href="css/slider.css" rel="stylesheet">
 </head>
 <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,13 +22,13 @@
             </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#golovna">ГОЛОВНА</a>
-                        <li><a href="#pro_tabir">ПРО ТАБІР</a>
-                        <li><a href="#rozporyadok">РОЗПОРЯДОК ДНЯ</a>
-                        <li><a href="#aktyvnosti">АКТИВНОСТІ</a>
-                        <li><a href="#tsiny">ЦІНИ ТА РЕЄСТРАЦІЯ</a>
-                        <li><a href="#photo">ФОТО</a>
-                        <li><a href="#kontakty">КОНТАКТИ</a>
+                        <li><a href="#golovna_anchor">ГОЛОВНА</a>
+                        <li><a href="#pro_tabir_anchor">ПРО ТАБІР</a>
+                        <li><a href="#rozporyadok_anchor">РОЗПОРЯДОК ДНЯ</a>
+                        <li><a href="#aktyvnosti_anchor">АКТИВНОСТІ</a>
+                        <li><a href="#reg__section" rel="nofollow">ЦІНИ ТА РЕЄСТРАЦІЯ</a>
+                        <li><a href="#photo__section" rel="nofollow">ФОТО</a>
+                        <li><a href="#contact__section" rel="nofollow">КОНТАКТИ</a>
                     </ul>
                 </div>
             </div>
@@ -176,6 +175,7 @@
             </div>
         </div>
     </div>
+
     <div id="rozporyadok">
 			<div class="col-sm-12">
 				<div class="brd">
@@ -201,6 +201,8 @@
         </div>
 			</div>
     </div>
+    <!-- Actiity -->
+    <a name="aktyvnosti_anchor" class="anchor"></a>
 		<div id="aktyvnosti">
       <div class='dotted'>
           <div class="row centered aktyv">
@@ -299,22 +301,8 @@
 						</div>
 					</div>
 		</div>
-    <div id="tsiny">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h1>ЦІНИ ТА РЕЄСТРАЦІЯ</h1>
-                    <h1>ALIVE CAMP</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6"></div>
-            </div>
-        </div>
-    </div>
     <!-- REGISTRATION SECTION -->
-
+    <a name="reg__section" class="anchor"></a>
     <section class="reg__section">
         <!-- background text -->
         <div class="row">
@@ -352,7 +340,9 @@
                     <span class="step__description">ЗАПОВНІТЬ </br> АНКЕТУ</span>
                 </div>
                 <button class="reg__button" type="submit">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScWzRzezqk0o33Z580fc2ju9PCesw4v0st4SyX66m7V58PglQ/viewform?c=0&w=1&usp=send_form">ЗАПОВНИТИ</a>
+                    <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScWzRzezqk0o33Z580fc2ju9PCesw4v0st4SyX66m7V58PglQ/viewform?c=0&w=1&usp=send_form">ЗАПОВНИТИ</a> -->
+                    <a href="" id="go_email">ЗАПОВНИТИ</a>
+
                 </button>
             </div>
             <div class="col-md-1">
@@ -406,16 +396,56 @@
             </div>
         </div>
         <!-- modal window test -->
-        <div id="modal_form">
-            <div reg__modal>
+        <div class="oleg_info"> 
+            <div id="modal_form">
+                <div reg__modal>
+                    <span id="modal_close">X</span>
+                    <div class="row centered">
+                        <div class="col-md-10 col-md-offset-1">
+                            <span class="modal__heading">РЕКВІЗИТИ</span>
+                            </br>
+                            <span class="modal__description">Необхідно переказати відповідну суму коштів на картку ПриватБанку:</span>
+                            </br>
+                            <span class="modal__number">5168 7556 3310 3490 - </br> Андрушків Олег Юрійович</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- email modal window -->
+        <div class="email__modal">
+            <div id="email_modal">
                 <span id="modal_close">X</span>
                 <div class="row centered">
                     <div class="col-md-10 col-md-offset-1">
-                        <span class="modal__heading">РЕКВІЗИТИ</span>
-                        </br>
-                        <span class="modal__description">Необхідно переказати відповідну суму коштів на картку ПриватБанку:</span>
-                        </br>
-                        <span class="modal__number">5168 7556 3310 3490 - </br> Андрушків Олег Юрійович</span>
+                        <form action="mailto:info@alivecamp.com.ua" method="post" enctype="text/plain">
+                            <span class="email__modal-text">
+                                Прізвище:
+                            </span> </br>
+                            <input type="text" name="lastname"></br>
+                            
+                            <span class="email__modal-text">
+                                Ім'я: 
+                            </span></br>
+                            <input type="text" name="firstname"></br>
+                            
+                            <span class="email__modal-text">
+                                Телефон:
+                            </span></br>
+                            <input type="tel" name="phone" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
+                            
+                            <span class="email__modal-text">
+                                E-mail:
+                            </span></br>
+                            <input type="email" name="email"></br>
+                            
+                            <span class="email__modal-text">
+                                Вибір заїзду:
+                            </span></br>
+                            <input type="number" name="quantity" min="1" max="5" value="1"></br>
+                            </br>
+                            <input type="submit" value="Надіслати" class="email__submit">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -424,6 +454,7 @@
     </section>
 
     <!-- PHOTO SECTION -->
+    <a name="photo__section" class="anchor"></a>
     <section class="photo_section">
         <div class="row centered">
             <div class="col-md-10 col-md-offset-1">
@@ -436,23 +467,18 @@
             <div class="col-md-6 col-md-offset-3 col__slider">
                 <!-- Wrapper for slides -->
               <div class="carousel-inner">
-
                 <div class="item active srle">
                   <img src="img/TR_AliveCamp-87.jpg" alt="1.jpg" class="img-responsive">
                 </div>
-
                 <div class="item">
                   <img src="img/TR_AliveCamp-141.jpg" alt="2.jpg" class="img-responsive">
                 </div>
-
                 <div class="item">
                   <img src="img/TR_AliveCamp-170.jpg" alt="3.jpg" class="img-responsive">
                 </div>
-
                 <div class="item">
                   <img src="img/TR_AliveCamp-198.jpg" alt="4.jpg" class="img-responsive">
                 </div>
-
                 <div class="item">
                   <img src="img/6nndg_tfwVw.jpg" alt="5.jpg" class="img-responsive">
                 </div>
@@ -476,8 +502,8 @@
 
             <div class="row row__thumbnail">
                 <div class="col-md-12 col__thumbnail">
-                    <!-- Thumbnails -->
-                    <ul class="thumbnails-carousel clearfix">
+                    <!-- Thumbnails --> 
+                    <ul class="thumbnails-carousel">
                         <li class="thumbnails">
                             <img src="img/TR_AliveCamp-87.jpg" alt="1_tn.jpg">
                         </li>
@@ -504,7 +530,7 @@
             </div>
     </section>
     <!-- CONTACT SECTION -->
-    <section class="contact__section">
+    <section class="contact__section" id="contact__section">
         <div class="row contact__headind centered">
             <div class="col-md-10 col-md-offset-1">
                 <h2 class="contact__headind">
@@ -565,25 +591,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 <!--     <script src="js/slider.js"></script>
-    <script src="../modal_window"></script> -->
+    <script src="js/modal_window.js"></script> -->
     <script type="text/javascript">
-        $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
-            $('a#go').click( function(event){ // лoвим клик пo ссылки с id="go"
-                event.preventDefault(); // выключaем стaндaртную рoль элементa
-                $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-                    function(){ // пoсле выпoлнения предъидущей aнимaции
-                        $('#modal_form')
-                            .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-                            .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+        $(document).ready(function() {
+        // first modal form
+            $('a#go').click( function(event){
+                event.preventDefault();
+                $('#overlay').fadeIn(400,
+                    function(){
+                        $('#modal_form') 
+                            .css('display', 'block')
+                            .animate({opacity: 1, top: '50%'}, 200);
                 });
             });
-            /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-            $('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+  
+            $('#modal_close, #overlay').click( function(){
                 $('#modal_form')
-                    .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-                        function(){ // пoсле aнимaции
-                            $(this).css('display', 'none'); // делaем ему display: none;
-                            $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                    .animate({opacity: 0, top: '45%'}, 200,
+                        function(){ 
+                            $(this).css('display', 'none');
+                            $('#overlay').fadeOut(400);
+                        }
+                    );
+            });
+    // second modal form
+            $('a#go_email').click( function(event){
+                event.preventDefault();
+                $('#overlay').fadeIn(400,
+                    function(){
+                        $('#email_modal') 
+                            .css('display', 'block')
+                            .animate({opacity: 1, top: '50%'}, 200);
+                });
+            });
+  
+            $('#modal_close, #overlay').click( function(){
+                $('#email_modal')
+                    .animate({opacity: 0, top: '45%'}, 200,
+                        function(){ 
+                            $(this).css('display', 'none');
+                            $('#overlay').fadeOut(400);
                         }
                     );
             });

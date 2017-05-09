@@ -340,7 +340,9 @@
                     <span class="step__description">ЗАПОВНІТЬ </br> АНКЕТУ</span>
                 </div>
                 <button class="reg__button" type="submit">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScWzRzezqk0o33Z580fc2ju9PCesw4v0st4SyX66m7V58PglQ/viewform?c=0&w=1&usp=send_form">ЗАПОВНИТИ</a>
+                    <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScWzRzezqk0o33Z580fc2ju9PCesw4v0st4SyX66m7V58PglQ/viewform?c=0&w=1&usp=send_form">ЗАПОВНИТИ</a> -->
+                    <a href="" id="go_email">ЗАПОВНИТИ</a>
+
                 </button>
             </div>
             <div class="col-md-1">
@@ -394,16 +396,56 @@
             </div>
         </div>
         <!-- modal window test -->
-        <div id="modal_form">
-            <div reg__modal>
+        <div class="oleg_info"> 
+            <div id="modal_form">
+                <div reg__modal>
+                    <span id="modal_close">X</span>
+                    <div class="row centered">
+                        <div class="col-md-10 col-md-offset-1">
+                            <span class="modal__heading">РЕКВІЗИТИ</span>
+                            </br>
+                            <span class="modal__description">Необхідно переказати відповідну суму коштів на картку ПриватБанку:</span>
+                            </br>
+                            <span class="modal__number">5168 7556 3310 3490 - </br> Андрушків Олег Юрійович</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- email modal window -->
+        <div class="email__modal">
+            <div id="email_modal">
                 <span id="modal_close">X</span>
                 <div class="row centered">
                     <div class="col-md-10 col-md-offset-1">
-                        <span class="modal__heading">РЕКВІЗИТИ</span>
-                        </br>
-                        <span class="modal__description">Необхідно переказати відповідну суму коштів на картку ПриватБанку:</span>
-                        </br>
-                        <span class="modal__number">5168 7556 3310 3490 - </br> Андрушків Олег Юрійович</span>
+                        <form action="mailto:info@alivecamp.com.ua" method="post" enctype="text/plain">
+                            <span class="email__modal-text">
+                                Прізвище:
+                            </span> </br>
+                            <input type="text" name="lastname"></br>
+                            
+                            <span class="email__modal-text">
+                                Ім'я: 
+                            </span></br>
+                            <input type="text" name="firstname"></br>
+                            
+                            <span class="email__modal-text">
+                                Телефон:
+                            </span></br>
+                            <input type="tel" name="phone" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
+                            
+                            <span class="email__modal-text">
+                                E-mail:
+                            </span></br>
+                            <input type="email" name="email"></br>
+                            
+                            <span class="email__modal-text">
+                                Вибір заїзду:
+                            </span></br>
+                            <input type="number" name="quantity" min="1" max="5" value="1"></br>
+                            </br>
+                            <input type="submit" value="Надіслати" class="email__submit">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -552,6 +594,7 @@
     <script src="js/modal_window.js"></script> -->
     <script type="text/javascript">
         $(document).ready(function() {
+        // first modal form
             $('a#go').click( function(event){
                 event.preventDefault();
                 $('#overlay').fadeIn(400,
@@ -564,6 +607,26 @@
   
             $('#modal_close, #overlay').click( function(){
                 $('#modal_form')
+                    .animate({opacity: 0, top: '45%'}, 200,
+                        function(){ 
+                            $(this).css('display', 'none');
+                            $('#overlay').fadeOut(400);
+                        }
+                    );
+            });
+    // second modal form
+            $('a#go_email').click( function(event){
+                event.preventDefault();
+                $('#overlay').fadeIn(400,
+                    function(){
+                        $('#email_modal') 
+                            .css('display', 'block')
+                            .animate({opacity: 1, top: '50%'}, 200);
+                });
+            });
+  
+            $('#modal_close, #overlay').click( function(){
+                $('#email_modal')
                     .animate({opacity: 0, top: '45%'}, 200,
                         function(){ 
                             $(this).css('display', 'none');

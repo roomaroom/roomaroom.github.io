@@ -217,6 +217,8 @@ table tr, table th, table td {
 .block3_1 p{
     color: gold;
     text-align: left;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 @media (max-width: 767px) {
   .block3_1 p{

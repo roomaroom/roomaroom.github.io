@@ -97,7 +97,6 @@ a.anchor:before{
     background: url(../img/Fon_9.jpg) no-repeat;
     min-height: 644px;
     background-size: cover;
-    font-family: Sans;
 }
 .text-block2_1 {
     background: #fdcb32;
@@ -190,7 +189,6 @@ table tr, table th, table td {
     background: url(../img/Fon_3.jpg) no-repeat;
     min-height: 644px;
     background-size: cover;
-    font-family: Sans;
 }
 .block-icon {
     border: 4px solid gold;

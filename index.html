@@ -338,26 +338,24 @@
                 </h1>
             </div>
         </div>
-        <img src="img/fance.png" class="img-responsive">
+        <img src="img/fance.png" class="img-responsive reg-fance-img">
         <div class="row centered">
-            <div class="col-md-10 col-lg-offset-1">
+            <div class="col-md-10 col-lg-offset-1 reg-discount__wrapper">
                 <p class="reg__discount">
                     АКЦІЯ! ПРИ ПОЇЗДЦІ НА ДВА ЗАЇЗДИ ALIVECAMP, НА ДРУГИЙ ЗАЇЗД НАДАЄТЬСЯ ЗНИЖКА 20%!
                 </p>
             </div>
         </div>
         <!-- steps -->
-        <div class="row centered">
+        <div class="row centered steps-block__wrapper">
         <!-- step one -->
             <div class="col-md-3">
                 <div class="reg__tex-wrapper">
                     <span class="step__number">1</span>
                     <span class="step__description">ЗАПОВНІТЬ </br> АНКЕТУ</span>
                 </div>
-                <button class="reg__button" type="submit">
-                    <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScWzRzezqk0o33Z580fc2ju9PCesw4v0st4SyX66m7V58PglQ/viewform?c=0&w=1&usp=send_form">ЗАПОВНИТИ</a> -->
+                <button class="reg__button button_hover" type="submit">
                     <a href="" id="go_email">ЗАПОВНИТИ</a>
-
                 </button>
             </div>
             <div class="col-md-1">
@@ -372,11 +370,11 @@
                         за допомогою одного з доступних варіантів
                     </p>
                 </div>
-                <button class="reg__button two" type="submit">
+                <button class="reg__button two button_hover" type="submit" >
                     <a href="https://www.liqpay.com/ru/checkout/card/alivecamp" target="_blank">ОПЛАТИТИ ОНЛАЙН</a>
                 </button>
                 <br>
-                <button class="reg__button two" type="submit">
+                <button class="reg__button two button_hover" type="submit">
                     <a href="" id="go">РЕКВІЗИТИ</a>
                 </button>
             </div>
@@ -399,12 +397,14 @@
         </div>
         <div class="row centered reg_footer">
             <div class="col-md-10 col-md-offset-1">
-                <a href="list.html" class="reg__thing-list" target="_blank">
-                    ПЕРЕЛІК НЕОБХІДНИХ РЕЧЕЙ
-                </a>
+                <div class="reg__thing-list_wrapper">
+                    <a href="list.html" class="reg__thing-list" target="_blank">
+                        ПЕРЕЛІК НЕОБХІДНИХ РЕЧЕЙ
+                    </a>
+                </div>
                 <p class="reg__additional-info">
-                    * У вартість входить: оренда локації, харчування, організаційні витрати, подарунки (доїзд/від'їзд не включений в оплату); </br>
-                    ** Реєстрації вважається дійсною лише після виконання всіх трьох кроків, які подані вище;</br>
+                    * Реєстрації вважається дійсною лише після виконання всіх трьох кроків, які подані вище;</br>
+                    ** У вартість входить: оренда локації, харчування, організаційні витрати, подарунки (доїзд/від'їзд не включений в оплату); </br>
                     *** Після реєстрації, протягом трьох днів, на вашу електронну скриньку прийде повідомлення про те, що ви успішно зареєструвались;</br>
                     **** У разі відмови від участі в таборі, ми можемо повернути вам лише половину коштів. Щоб повернути усі кошти, необхідно знайти на своє місце іншу особу.
                 </p>
@@ -432,49 +432,57 @@
             <div id="email_modal">
                 <span id="modal_close">X</span>
                 <div class="row centered">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-8 col-md-offset-2">
                         <form action="mailto:info@alivecamp.com.ua" method="post" enctype="text/plain">
-                            <span class="email__modal-text">
+                            <span class="email__modal-text bold">
                                 Прізвище:
                             </span> </br>
                             <input type="text" name="lastname"></br>
 
-                            <span class="email__modal-text">
+                            <span class="email__modal-text bold">
                                 Ім'я:
                             </span></br>
                             <input type="text" name="firstname"></br>
 
-                            <span class="email__modal-text">
+                            <span class="email__modal-text bold">
                                 Телефон:
                             </span></br>
                             <input type="tel" name="phone" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
 
-                            <span class="email__modal-text">
+                            <span class="email__modal-text bold">
                                 E-mail:
                             </span></br>
-                            <input type="email" name="email"></br>
-
-                            <span class="email__modal-text">
+                            <input type="email" name="email">
+                            </br>
+                            </br>
+                            <span class="email__modal-text bold">
                                 Вибір заїзду:
                             </span></br>
-                            <span class="email__modal-text"> 1
+
+                            <div class="pick-race__wrapper">
                                 <input type="checkbox" name="race1" value="1">
-                            </span>
-                            <span class="email__modal-text"> 2
+                                <span class="email__modal-text"> 1. 22 червня – 30 червня; 16-26р.</span>
+                                </br>
+
                                 <input type="checkbox" name="race2" value="2">
-                            </span>
-                            <span class="email__modal-text"> 3
+                                <span class="email__modal-text"> 2. 30 червня – 08 липня; 16-26р.
+                                </span></br>
+
                                 <input type="checkbox" name="race3" value="3">
-                            </span>
-                            <span class="email__modal-text"> 4
+                                <span class="email__modal-text"> 3. 08 липня – 16 липня; 16-26р.
+                                </span></br>
+
                                 <input type="checkbox" name="race4" value="4">
-                            </span>
-                            <span class="email__modal-text"> 5
+                                <span class="email__modal-text"> 4. 16 липня – 24 липня; необмежений вік; програма не є обов'язковою
+                                </span></br>
+                                
                                 <input type="checkbox" name="race5" value="5">
-                            </span>
+                                <span class="email__modal-text"> 5. 24 липня – 1 серпня; 16-26р.
+                                </span>
+                                </br>
+                            </div>
                             </br>
-                            </br>
-                            <input type="submit" value="Надіслати" class="email__submit">
+                            <input type="submit" value="Далі" class="email__submit">
                         </form>
                     </div>
                 </div>
@@ -620,60 +628,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<!--     <script src="js/slider.js"></script>
-    <script src="js/modal_window.js"></script> -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-        // first modal form
-            $('a#go').click( function(event){
-                event.preventDefault();
-                $('#overlay').fadeIn(400,
-                    function(){
-                        $('#modal_form')
-                            .css('display', 'block')
-                            .animate({opacity: 1, top: '50%'}, 200);
-                });
-            });
-
-            $('#modal_close, #overlay').click( function(){
-                $('#modal_form')
-                    .animate({opacity: 0, top: '45%'}, 200,
-                        function(){
-                            $(this).css('display', 'none');
-                            $('#overlay').fadeOut(400);
-                        }
-                    );
-            });
-    // second modal form
-            $('a#go_email').click( function(event){
-                event.preventDefault();
-                $('#overlay').fadeIn(400,
-                    function(){
-                        $('#email_modal')
-                            .css('display', 'block')
-                            .animate({opacity: 1, top: '50%'}, 200);
-                });
-            });
-
-            $('#modal_close, #overlay').click( function(){
-                $('#email_modal')
-                    .animate({opacity: 0, top: '45%'}, 200,
-                        function(){
-                            $(this).css('display', 'none');
-                            $('#overlay').fadeOut(400);
-                        }
-                    );
-            });
-            // anchor animation
-            $("#nav__menu").on("click","a", function (event) {
-                event.preventDefault();
-                var id  = $(this).attr('href'),
-                top = $(id).offset().top;
-                $('body,html').animate({scrollTop: top-50}, 1000);
-            });
-        });
-
-    </script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/application.js" type="text/javascript"></script>
 
 </body>
 </html>

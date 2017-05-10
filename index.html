@@ -9,6 +9,17 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-98894304-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44575906 = new Ya.Metrika({ id:44575906, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -27,12 +38,13 @@
                     <li><a href="#pro_tabir_anchor">ПРО ТАБІР</a>
                     <li><a href="#rozporyadok_anchor">РОЗПОРЯДОК ДНЯ</a>
                     <li><a href="#aktyvnosti_anchor">АКТИВНОСТІ</a>
-                    <li><a href="#reg__section" rel="nofollow">ЦІНИ ТА РЕЄСТРАЦІЯ</a>
+                    <li class="bordergold"><a href="#reg__section" rel="nofollow">ЦІНИ ТА РЕЄСТРАЦІЯ</a>
                     <li><a href="#photo__section" rel="nofollow">ФОТО</a>
                     <li><a href="#contact__section" rel="nofollow">КОНТАКТИ</a>
                 </ul>
-            </div>
-            </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="second"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+38 097 220 78 30; +38 063 066 02 93</a></li>
+                </ul>
         </div>
     </nav>
     <a id="golovna_anchor"></a>
@@ -46,10 +58,36 @@
                 </div>
             </div>
             <div class="row buttons centered">
+
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title">Alive Camp</h4>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="cartoonVideo" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        var url = $("#cartoonVideo").attr('src');
+                        $("#myModal").on('hide.bs.modal', function(){
+                            $("#cartoonVideo").attr('src', '');
+                        });
+                        $("#myModal").on('show.bs.modal', function(){
+                            $("#cartoonVideo").attr('src', url);
+                        });
+                    });
+                </script>
+
                 <div class="col-lg-3 col-lg-offset-3">
-                    <a href="https://www.youtube.com/watch?v=w14t6go9mx8&t=1s">
+                    <a href="#myModal" data-toggle="modal">
                         <button type="button" class="btn btn-default btn-lg button-one centered" aria-label="Left Align">
-                            <span class="glyphicon glyphicon-play-circle but-icon" aria-hidden="true"></span>
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
                             <span class="promo">ПРОМО</span>
                         </button>
                     </a>
@@ -97,8 +135,8 @@
                         <thead>
                             <tr>
                                 <th><small>ЗАЇЗДИ</small><br/>ALIVE CAMP</th>
-                                <th>ДАТА</th>
-                                <th>ВІК</th>
+                                <th><br/>ДАТА</th>
+                                <th><br/>ВІК</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -155,11 +193,11 @@
                 </div>
                 <div class="col-lg-3">
                     <img src="img/icon_3.png">
-                    <p>Мальовниче озеро<br/>Свіже повітря<br/>Відпочинкова зона<br/>Вогонь, гітара, зорі</p>
+                    <p>Турніри і квести<br/>Розвиваючі, настільні ігри<br/>Уроки гітари<br/>Спортивні ігри</p>
                 </div>
                 <div class="col-lg-3">
                     <img src="img/icon_4.png">
-                    <p>Мальовниче озеро<br/>Свіже повітря<br/>Відпочинкова зона<br/>Вогонь, гітара, зорі</p>
+                    <p>Душевні бесіди<br/>Натхненні вечори<br/>Курс про стосунки<br/>Кінотеатр просто неба</p>
                 </div>
             </div>
         </div>
@@ -167,23 +205,23 @@
             <div class="row centered">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1>ЗРУЧНОСТІ</h1>
-                    <p>Для того, щоб зробити ваше життя у наметовому містечку Alive Camp ще кращим, ми оснащуємо територію різноманітними зручностями:</p>
+                    <p>Для того, щоб зробити ваше життя у наметовому містечку Alive Camp ще кращим,<br /> ми оснащуємо територію різноманітними зручностями:</p>
                 </div>
             </div>
         </div>
         <div class="container centered">
             <div class="row centered col-lg-offset-1 block3_1">
                 <div class="col-sm-3 col-md-3">
-                    <p>1. Душі<br/>2. Туалети<br/>3. Умивальники<br/>4. Столи</p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Душі<br/><i class="fa fa-check" aria-hidden="true"></i> Туалети<br/><i class="fa fa-check" aria-hidden="true"></i> Умивальники<br/><i class="fa fa-check" aria-hidden="true"></i> Столи</p>
                 </div>
                 <div class="col-sm-2 col-md-3">
-                    <p>5. Лавочки<br/>6. Постійна точка<br/>для зарядки<br/>ваших пристроїв</p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Лавочки<br/><i class="fa fa-check" aria-hidden="true"></i> Постійна точка<br/>&emsp; для зарядки<br/> &emsp; ваших пристроїв</p>
                 </div>
                 <div class="col-sm-2 col-md-3">
-                    <p>7. Накриття від дощу<br/>8. Фото-зона<br/>9. Relax-зона<br/>відпочинку</p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Накриття від дощу<br/><i class="fa fa-check" aria-hidden="true"></i> Фото-зона<br/><i class="fa fa-check" aria-hidden="true"></i> Гойдалки <br/> <i class="fa fa-check" aria-hidden="true"></i> Міні-кафе</p>
                 </div>
                 <div class="col-sm-2 col-md-3">
-                    <p>10. Міні-кафе<br/>11. Тенісний стіл<br/>12. Гойдалки</p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Relax-зона<br/><i class="fa fa-check" aria-hidden="true"></i> Тенісний стіл<br/><i class="fa fa-check" aria-hidden="true"></i> Освітлювальні <br> &emsp; елементи локації</p>
                 </div>
             </div>
         </div>
@@ -435,19 +473,22 @@
                     <div class="col-md-8 col-md-offset-2">
                         <form action="mailto:info@alivecamp.com.ua" method="post" enctype="text/plain">
                             <span class="email__modal-text bold">
+                    <div class="col-md-10 col-md-offset-1">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScKi0W3SpbxiwvxmOP291a0wdJnLEQaXp6eIK3Q22G5HW87Cw/formResponse" method="post" enctype="text/plain">
+                            <span class="email__modal-text">
                                 Прізвище:
                             </span> </br>
-                            <input type="text" name="lastname"></br>
+                            <input type="text" name="entry.935987859></br>
 
                             <span class="email__modal-text bold">
                                 Ім'я:
                             </span></br>
-                            <input type="text" name="firstname"></br>
+                            <input type="text" name="entry.1131368883"></br>
 
                             <span class="email__modal-text bold">
                                 Телефон:
                             </span></br>
-                            <input type="tel" name="phone" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
+                            <input type="tel" name="entry.1263995965" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
 
                             <span class="email__modal-text bold">
                                 E-mail:
@@ -456,6 +497,9 @@
                             </br>
                             </br>
                             <span class="email__modal-text bold">
+                            <input type="email" name="entry.2007694099"></br>
+
+                            <span class="email__modal-text">
                                 Вибір заїзду:
                             </span></br>
 
@@ -475,7 +519,7 @@
                                 <input type="checkbox" name="race4" value="4">
                                 <span class="email__modal-text"> 4. 16 липня – 24 липня; необмежений вік; програма не є обов'язковою
                                 </span></br>
-                                
+
                                 <input type="checkbox" name="race5" value="5">
                                 <span class="email__modal-text"> 5. 24 липня – 1 серпня; 16-26р.
                                 </span>

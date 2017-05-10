@@ -58,7 +58,8 @@ a.anchor:before{
     min-height: 100%;
 }
 .buttons {
-    padding: 5em 0;
+    padding: 3em 0;
+    padding-top: 1em;
 }
 .img-block1_1 img {
     margin-top: 20px;
@@ -99,6 +100,7 @@ a.anchor:before{
     background-size: cover;
 }
 .text-block2_1 {
+    padding-bottom: 10px;
     background: #fdcb32;
     height: 100%;
 }
@@ -106,12 +108,18 @@ a.anchor:before{
     color: white;
 }
 .text-block2_2 img {
-    margin-top: 20px;
+    margin-top: -25px;
 }
+@media (max-width: 1200px) {
+.text-block2_2 img {
+    margin-top: 25px;
+}
+ }
 .text-block2_2 h3 {
     padding-top: 0px;
 }
 .text-block2_3 {
+    padding-bottom: 10px;
     background: #fdcb32;
     height: 100%;
 }
@@ -125,6 +133,7 @@ a.anchor:before{
     font-size: 17px;
 }
 table {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     width: 100%;
     color: gold;
 }
@@ -135,7 +144,7 @@ table {
     vertical-align:middle;
 }
 .table > thead > tr > th {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     color: white;
 }
@@ -151,8 +160,11 @@ table th small {
     font-size: 80%;
 }
 table tr, table th, table td {
-    font-size: ;
+    font-size: 17px;
 }    
+.table > thead > tr > th:ntn-child(1) {
+  text-align: right;
+}
 .table-backdown td {
     padding: 0em;
     margin: 0em;
@@ -174,7 +186,7 @@ table tr, table th, table td {
     border-bottom: 0px;
 }
 .table tbody tr td strong {
-    border: 2px solid gold;
+    border: 1px solid gold;
     padding: 0.2em;
 }
 .text-block2_4 p {

@@ -346,12 +346,13 @@ table {
    border-right: 4px dotted orange;
    margin: 0 45px;
 }*/
-.aktyv{
+/*.aktivit{
     color: gold;
     position: relative;
     bottom: 20px;
-    font-weight: bold;
-}
+    font-weight: 900;
+    letter-spacing: 20px!important;
+}*/
 .aktyv-underline {
   text-decoration: underline;
 	color: white;
@@ -376,9 +377,22 @@ table {
 	left: 25px;
   right: 25px;
 }
+.pos_vol{
+  padding-top: 10px;
+}
+.pos_foot{
+  padding-top: 10px;
+}
 .pos_ten {
 	position: absolute;
 	top: 60px!important;
+  padding-top: 10px;
+}
+.pos_badm{
+  padding-top: 10px;
+}
+.pos_polo{
+  padding-top: 10px;
 }
 .image-tam {
 	width: 100%;
@@ -404,7 +418,7 @@ table {
 }
 .hb{
   position: absolute;
-	top: 60px!important;
+	top: 55px!important;
 }
 .qu{
   position: absolute;
@@ -414,9 +428,21 @@ table {
   position: absolute;
 	top: 70px!important;
 }
+.ma{
+  padding-top: 10px;
+}
 .dix{
   position: absolute;
 	top: 60px!important;
+}
+.pa{
+  padding-top: 10px;
+}
+.zo{
+   padding-top: 10px;
+}
+.engli{
+  padding-top: 15px!important;
 }
 .ch{
   position: absolute;
@@ -434,6 +460,18 @@ table {
 	font-family: Century Gothic;
 	min-height: 500px;
 }
+@media (max-width: 1024px) {
+  .circle span {
+  	position: absolute;
+  	top: 40px!important;
+  	left: 15px;
+    right: 15px;
+    font-size: 16px;
+  }
+  .posreg{
+    padding-top: 10px;
+  }
+}
 @media (max-width: 768px) {
   .circle span {
   	position: absolute;
@@ -450,6 +488,9 @@ table {
   	left: 25px;
     right: 25px;
     font-size: 28px;
+  }
+  .hb{
+    padding-bottom: 150px!important;
   }
 }
 #tsiny {

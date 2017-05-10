@@ -295,12 +295,13 @@ table tr, table th, table td {
    border-right: 4px dotted orange;
    margin: 0 45px;
 }*/
-.aktyv{
+/*.aktivit{
     color: gold;
     position: relative;
     bottom: 20px;
-    font-weight: bold;
-}
+    font-weight: 900;
+    letter-spacing: 20px!important;
+}*/
 .aktyv-underline {
   text-decoration: underline;
 	color: white;

@@ -1,11 +1,13 @@
+html{
+  overflow-x: hidden; /*for deleting horizontal scroll*/
+}
+
 body {
   background-color: black;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-
-  margin: 0px 50px;
   margin-top: 50px;
-
   min-width: 320px;
+  width: 100%;
 }
 
 /*@font-face {
@@ -19,12 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
 ul li {
   list-style: none;
 }
-.phone{
-  color: gold;
-  font-size: 10px;
 
-  /*font-size: px;*/
-}
 ul{
   padding: 0px;
   margin: 0px;
@@ -38,12 +35,16 @@ ul{
   text-align: center;
 }
 .navbar-nav {
-  width: 100%;
+/*  width: 100%;*/
   text-align: center;
 }
 .navbar-nav > li {
   float: none;
   display: inline-block;
+}
+.navbar-nav > li:ntn-child(2){
+  color: gold;
+  padding-top: 5px;
 }
 
 a.anchor:before{
@@ -53,8 +54,20 @@ a.anchor:before{
   height: 50px;
   visibility: hidden;
 }
-
+.navbar-nav > li.second > a {
+color: gold
 }
+.navbar-nav > li.second > a > i {
+      font-size: 20px;
+    padding-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.nav li.bordergold>a{
+  color: gold;
+    border: 2px solid gold;
+    padding: 1px 1px;
+ }
 /*1 BLOCK*/
 .main-background {
     padding-top: 55px;
@@ -63,7 +76,9 @@ a.anchor:before{
     min-height: 100%;
 }
 .buttons {
-    padding: 5em 0;
+    padding: 2em 0 7em 0;
+    padding: 3em 0;
+    padding-top: 1em;
 }
 .img-block1_1 img {
     margin-top: 20px;
@@ -71,40 +86,59 @@ a.anchor:before{
 }
 .promo {
     position: relative;
-    bottom: 0.57em;
+    bottom: 0.1em;
 }
 .btn.button-one, .btn.button-two {
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0);
 }
 .btn.button-one {
-    margin-bottom: 10px;
+/*    margin-bottom: 10px;*/
     padding-top: 0px;
     padding-bottom: 0px;
     color: gold;
     position: relative;
-    border: 3px solid #c69f1a;;
+    border: 3px solid #c69f1a;
+    transition: background 0.9s ease;
 }
+
+.button-one:hover{
+  display: inline-block;
+  border: none;
+  background: #fdcb32;
+  color: #fff;
+  padding: 3px 19px;
+}
+
+
 .btn.button-one
-.but-icon {
-    font-size: 2.15em;
-    padding: 0em 0.3em 0em 0em;
+i {
+    font-size: 2em;
+    padding: 0em 0.3em 0.2em 0em;
     position: relative;
     top: 0.07em;
 }
+
 .btn.button-two {
     color: greenyellow;
     border: 3px solid greenyellow;
+    transition: background 0.9s ease;
 }
+
+.button-two:hover{
+  background: greenyellow;
+  color: #fff;
+}
+
 /*2 BLOCK*/
 #pro_tabir {
     padding-top: 55px;
     background: url(../img/Fon_9.jpg) no-repeat;
     min-height: 644px;
     background-size: cover;
-    font-family: Sans;
 }
 .text-block2_1 {
+    padding-bottom: 10px;
     background: #fdcb32;
     height: 100%;
 }
@@ -112,12 +146,18 @@ a.anchor:before{
     color: white;
 }
 .text-block2_2 img {
-    margin-top: 20px;
+    margin-top: -25px;
 }
+@media (max-width: 1200px) {
+.text-block2_2 img {
+    margin-top: 25px;
+}
+ }
 .text-block2_2 h3 {
     padding-top: 0px;
 }
 .text-block2_3 {
+    padding-bottom: 10px;
     background: #fdcb32;
     height: 100%;
 }
@@ -131,8 +171,12 @@ a.anchor:before{
     font-size: 17px;
 }
 table {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     width: 100%;
     color: gold;
+}
+td, th {
+    font-weight: 600;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     line-height: 1;
@@ -141,7 +185,7 @@ table {
     vertical-align:middle;
 }
 .table > thead > tr > th {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     color: white;
 }
@@ -157,7 +201,10 @@ table th small {
     font-size: 80%;
 }
 table tr, table th, table td {
-    font-size: ;
+    font-size: 17px;
+}
+.table > thead > tr > th:ntn-child(1) {
+  text-align: right;
 }
 .table-backdown td {
     padding: 0em;
@@ -180,7 +227,7 @@ table tr, table th, table td {
     border-bottom: 0px;
 }
 .table tbody tr td strong {
-    border: 2px solid gold;
+    border: 1px solid gold;
     padding: 0.2em;
 }
 .text-block2_4 p {
@@ -189,13 +236,15 @@ table tr, table th, table td {
 .text-block2_4 p {
     color: gold;
 }
+table {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  }
 /*3 BLOCK*/
 #vas_ochikuye {
     padding-top: 25px;
     background: url(../img/Fon_3.jpg) no-repeat;
     min-height: 644px;
     background-size: cover;
-    font-family: Sans;
 }
 .block-icon {
     border: 4px solid gold;
@@ -212,6 +261,8 @@ table tr, table th, table td {
 .block3_1 p{
     color: gold;
     text-align: left;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 @media (max-width: 767px) {
   .block3_1 p{
@@ -469,11 +520,6 @@ table tr, table th, table td {
 
 .reg__background.two {
   top: 27px;
-  left: 10px;
-}
-
-.reg__background.two {
-  top: 27px;
   left: -20px;
   color: transparent;
   -webkit-text-stroke: 1px #fdcb32;
@@ -507,16 +553,16 @@ table tr, table th, table td {
 
 .reg__heading{
   position: relative;
-  margin-bottom: 2%;
+  margin-bottom: 0px;
   font-weight: bold;
   letter-spacing: .25em;
-  font-size: 3.5em;
+  font-size: 5em;
   z-index: 2;
 }
 
 .reg__heading.bordered{
-  top: -70px;
-  left: 3px;
+  top: -94px;
+  left: 7px;
   color: transparent;
   -webkit-text-stroke: 1px #fdcb32;
   z-index: 0;
@@ -524,6 +570,10 @@ table tr, table th, table td {
 
 .reg__column-heading{
   margin-bottom: -6em;
+}
+
+.reg-discount__wrapper{
+  margin-bottom: 1.1em;
 }
 
 .reg__discount{
@@ -537,6 +587,11 @@ table tr, table th, table td {
   font-size: 6em;
 }
 
+.steps-block__wrapper{
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
 .step__description{
   display: inline-block;
   color: #fdcb32;
@@ -548,22 +603,34 @@ table tr, table th, table td {
 }
 
 .reg__button{
-  height: 25px;
   background-color: Transparent;
   background-repeat:no-repeat;
   border: 1px solid #fdcb32;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
   outline:none;
   height: 30px;
+  transition: all 0.9s ease;
+  padding: 0px;
+}
+
+.reg__button.button_hover:hover{
+  border: none;
+  background-color: #fdcb32;
+}
+
+.reg__button.button_hover a:hover {
+  color: #202020;
 }
 
 .reg__button a{
+  display: block;
+  padding: 15px 20px;
+  margin: -15px;
   text-decoration: none;
   color: #fdcb32;
   letter-spacing: 0.1em;
   font-size: 1.2em;
-  padding: 0px 5px;
 }
 
 .reg__arrow{
@@ -590,14 +657,14 @@ table tr, table th, table td {
 
 #modal_form, #email_modal {
   width: 500px;
-  height: 320px;
+  height: 250px;
   border-radius: 5px;
   border: 1px #fdcb32 solid;
   background: #202020;
   position: fixed;
   top: 45%;
   left: 50%;
-  margin-top: -150px;
+  margin-top: -125px;
   margin-left: -250px;
   display: none;
   opacity: 0;
@@ -636,7 +703,7 @@ table tr, table th, table td {
   font-size: 40px;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .modal__description{
@@ -653,6 +720,12 @@ table tr, table th, table td {
 }
 
 /*Modal Email*/
+#email_modal{
+  height: 470px;
+  width: 400px;
+  margin-top: -230px;
+  margin-left: -200px;
+}
 
 .email__modal-text{
   color: #fdcb32;
@@ -669,7 +742,13 @@ table tr, table th, table td {
   padding: 7px 20px;
 }
 
+.pick-race__wrapper{
+  text-align: left;
+}
 
+.bold{
+  font-weight: bold;
+}
 /*Modal window end*/
 
 .payment__description-three{
@@ -686,6 +765,10 @@ table tr, table th, table td {
   letter-spacing: 1px;
 }
 
+.reg__thing-list_wrapper{
+  margin-bottom: 10px;
+}
+
 .reg__thing-list{
   color: #fdcb32;
   text-decoration: underline;
@@ -694,14 +777,21 @@ table tr, table th, table td {
   font-size: 20px;
 }
 
-.reg__thing-list:hover{
+.reg__thing-list:hover, .reg__thing-list:visited{
   color: #fdcb32;
+  border: 1px solid #fdcb32;
+  text-decoration: none;
+  padding: 2px 5px;
 }
 
 .reg__additional-info{
   color: #fdcb32;
   font-size: 10px;
   margin-bottom: 2em;
+}
+
+.reg-fance-img{
+  margin-bottom: -40px;
 }
 
 /*list page styles*/

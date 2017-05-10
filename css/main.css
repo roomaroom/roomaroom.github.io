@@ -33,12 +33,16 @@ ul{
   text-align: center;
 }
 .navbar-nav {
-  width: 100%;
+/*  width: 100%;*/
   text-align: center;
 }
 .navbar-nav > li {
   float: none;
   display: inline-block;
+}
+.navbar-nav > li:ntn-child(2){
+  color: gold;
+  padding-top: 5px;
 }
 
 a.anchor:before{
@@ -48,8 +52,20 @@ a.anchor:before{
   height: 50px;
   visibility: hidden;
 }
-
+.navbar-nav > li.second > a {
+color: gold
 }
+.navbar-nav > li.second > a > i {
+      font-size: 20px;
+    padding-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.nav li.bordergold>a{
+  color: gold;
+    border: 2px solid gold;
+    padding: 1px 1px;
+ }
 /*1 BLOCK*/
 .main-background {
     padding-top: 55px;
@@ -200,7 +216,7 @@ table tr, table th, table td {
 }
 table {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
+  }
 /*3 BLOCK*/
 #vas_ochikuye {
     padding-top: 25px;
@@ -234,7 +250,7 @@ table {
 #rozporyadok {
     padding-top: 55px;
     min-height: 644px;
-		background: url(../img/Fon_4.jpg) no-repeat center;
+		background: url(../img/photo_4.jpg) no-repeat center;
 		background-size: cover;
 		color: white;
 		font-size: 18px;

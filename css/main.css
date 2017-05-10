@@ -137,6 +137,9 @@ table {
     width: 100%;
     color: gold;
 }
+td, th {
+    font-weight: 600;
+}
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     line-height: 1;
     border-top: 0px;
@@ -194,6 +197,9 @@ table tr, table th, table td {
 }
 .text-block2_4 p {
     color: gold;
+}
+table {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 /*3 BLOCK*/
 #vas_ochikuye {

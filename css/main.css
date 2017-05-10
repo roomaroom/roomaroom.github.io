@@ -19,7 +19,12 @@ h1, h2, h3, h4, h5, h6, p {
 ul li {
   list-style: none;
 }
+.phone{
+  color: gold;
+  font-size: 10px;
 
+  /*font-size: px;*/
+}
 ul{
   padding: 0px;
   margin: 0px;
@@ -80,7 +85,7 @@ a.anchor:before{
     position: relative;
     border: 3px solid #c69f1a;;
 }
-.btn.button-one  
+.btn.button-one
 .but-icon {
     font-size: 2.15em;
     padding: 0em 0.3em 0em 0em;
@@ -90,7 +95,7 @@ a.anchor:before{
 .btn.button-two {
     color: greenyellow;
     border: 3px solid greenyellow;
-}   
+}
 /*2 BLOCK*/
 #pro_tabir {
     padding-top: 55px;
@@ -153,7 +158,7 @@ table th small {
 }
 table tr, table th, table td {
     font-size: ;
-}    
+}
 .table-backdown td {
     padding: 0em;
     margin: 0em;
@@ -212,7 +217,7 @@ table tr, table th, table td {
   .block3_1 p{
     text-align: center;
   }
- } 
+ }
 #rozporyadok {
     padding-top: 55px;
     min-height: 644px;
@@ -320,9 +325,22 @@ table tr, table th, table td {
 	left: 25px;
   right: 25px;
 }
+.pos_vol{
+  padding-top: 10px;
+}
+.pos_foot{
+  padding-top: 10px;
+}
 .pos_ten {
 	position: absolute;
 	top: 60px!important;
+  padding-top: 10px;
+}
+.pos_badm{
+  padding-top: 10px;
+}
+.pos_polo{
+  padding-top: 10px;
 }
 .image-tam {
 	width: 100%;
@@ -348,7 +366,7 @@ table tr, table th, table td {
 }
 .hb{
   position: absolute;
-	top: 60px!important;
+	top: 55px!important;
 }
 .qu{
   position: absolute;
@@ -358,9 +376,21 @@ table tr, table th, table td {
   position: absolute;
 	top: 70px!important;
 }
+.ma{
+  padding-top: 10px;
+}
 .dix{
   position: absolute;
 	top: 60px!important;
+}
+.pa{
+  padding-top: 10px;
+}
+.zo{
+   padding-top: 10px;
+}
+.engli{
+  padding-top: 15px!important;
 }
 .ch{
   position: absolute;
@@ -378,6 +408,18 @@ table tr, table th, table td {
 	font-family: Century Gothic;
 	min-height: 500px;
 }
+@media (max-width: 1024px) {
+  .circle span {
+  	position: absolute;
+  	top: 40px!important;
+  	left: 15px;
+    right: 15px;
+    font-size: 16px;
+  }
+  .posreg{
+    padding-top: 10px;
+  }
+}
 @media (max-width: 768px) {
   .circle span {
   	position: absolute;
@@ -394,6 +436,9 @@ table tr, table th, table td {
   	left: 25px;
     right: 25px;
     font-size: 28px;
+  }
+  .hb{
+    padding-bottom: 150px!important;
   }
 }
 #tsiny {

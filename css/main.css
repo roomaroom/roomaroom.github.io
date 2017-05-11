@@ -171,6 +171,19 @@ i {
   color: #fff;
 }
 
+.modal-content {
+    border-radius: 5px;
+    border: 1px #fdcb32 solid;
+    background: #202020;
+}
+.modal-content > .modal-header > button {
+    color: #fdcb32;
+    opacity: 1;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #fdcb32;
+
 /*2 BLOCK*/
 #pro_tabir {
     padding-top: 55px;

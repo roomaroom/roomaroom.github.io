@@ -325,6 +325,26 @@ table {
 		font-size: 18px;
 		font-family: Century Gothic;
 }
+.square1 {
+	width: 100px;
+	height: 16px;
+	background: gold;
+  padding-left: 300px;
+  margin-left: 480px;
+  z-index: 2;
+  position: relative;
+  top: 45px;
+}
+.square2 {
+	width: 100px;
+	height: 16px;
+	background: gold;
+  padding-left: 300px;
+  margin-left: 480px;
+  z-index: 2;
+  position: relative;
+  top: 455px;
+}
 .metro {
 	  text-align: center;
 		margin-bottom: 50px;
@@ -334,6 +354,40 @@ table {
 	  border: 3px solid gold; /* Параметры границы */
 		padding: 20px 50px 300px 50px;
 		margin: 20px 100px 50px;
+    z-index: 1;
+}
+@media (max-width: 1024px) {
+    #rozporyadok{
+      padding-top: 35px;
+    }
+    .metro{
+      margin-bottom: 35px;
+    }
+    .brd {
+     font-size: 17px;
+     padding: 5px 0px 300px 0px;
+     margin: 20px 15px 0px 15px;
+    }
+    .square1 {
+      width: 100px;
+      height: 16px;
+      background: gold;
+      padding-left: 300px;
+      margin-left: 344px;
+      z-index: 2;
+      position: relative;
+      top: 45px;
+    }
+    .square2 {
+      width: 100px;
+      height: 16px;
+      background: gold;
+      padding-left: 300px;
+      margin-left: 344px;
+      z-index: 2;
+      position: relative;
+      top: 425px;
+    }
 }
 @media (max-width: 768px) {
     #rozporyadok{
@@ -347,6 +401,26 @@ table {
      padding: 5px 0px 300px 0px;
      margin: 20px 15px 0px 15px;
     }
+    .square1 {
+    	width: 100px;
+    	height: 16px;
+    	background: gold;
+      padding-left: 300px;
+      margin-left: 220px;
+      z-index: 2;
+      position: relative;
+      top: 45px;
+    }
+    .square2 {
+    	width: 100px;
+    	height: 16px;
+    	background: gold;
+      padding-left: 300px;
+      margin-left: 220px;
+      z-index: 2;
+      position: relative;
+      top: 425px;
+    }
 }
 @media (max-width: 425px) {
     #rozporyadok{
@@ -359,6 +433,70 @@ table {
     }
     .metro{
       margin-bottom: 25px;
+    }
+    .square1 {
+      width: 100px;
+      height: 12px;
+      background: gold;
+      padding-left: 180px;
+      margin-left: 110px;
+      z-index: 2;
+      position: relative;
+      top: 30px;
+    }
+    .square2 {
+      width: 100px;
+      height: 12px;
+      background: gold;
+      padding-left: 180px;
+      margin-left: 110px;
+      z-index: 2;
+      position: relative;
+      top: 594px;
+    }
+}
+@media (max-width: 375px) {
+    .square1 {
+      width: 100px;
+      height: 12px;
+      background: gold;
+      padding-left: 180px;
+      margin-left: 84px;
+      z-index: 2;
+      position: relative;
+      top: 30px;
+    }
+    .square2 {
+      width: 100px;
+      height: 12px;
+      background: gold;
+      padding-left: 180px;
+      margin-left: 84px;
+      z-index: 2;
+      position: relative;
+      top: 594px;
+    }
+}
+@media (max-width: 320px) {
+    .square1 {
+      width: 100px;
+      height: 12px;
+      background: gold;
+      padding-left: 180px;
+      margin-left: 60px;
+      z-index: 2;
+      position: relative;
+      top: 30px;
+    }
+    .square2 {
+      width: 100px;
+      height: 12px;
+      background: gold;
+      padding-left: 180px;
+      margin-left: 60px;
+      z-index: 2;
+      position: relative;
+      top: 671px;
     }
 }
 #aktyvnosti {
@@ -393,16 +531,10 @@ table {
    border-right: 4px dotted orange;
    margin: 0 45px;
 }*/
-/*.aktivit{
-    color: gold;
-    position: relative;
-    bottom: 20px;
-    font-weight: 900;
-    letter-spacing: 20px!important;
-}*/
-.aktyv-underline {
-  text-decoration: underline;
-	color: white;
+.tilo{
+	width: 150px;
+	height: 150px;
+	background: gold;
 }
 .ico-vo {
 	margin: 0 auto;
@@ -1064,4 +1196,206 @@ ul.contact__list-social li{
     background: url(../img/photo_1.jpg) no-repeat;
     background-size: cover;
     min-height: 100%;
+}
+.tilo{
+  width: 140px;
+  height: 3px;
+  background: gold;
+  margin-left: 590px;
+  position: relative;
+  bottom: 5px;
+}
+.duh{
+  width: 150px;
+  height: 3px;
+  background: gold;
+  margin-left: 584px;
+  position: relative;
+  bottom: 5px;
+}
+.rozum{
+  width: 190px;
+  height: 3px;
+  background: gold;
+  margin-left: 565px;
+  position: relative;
+  bottom: 5px;
+}
+.samorozvytok{
+  width: 305px;
+  height: 3px;
+  background: gold;
+  margin-left: 505px;
+  position: relative;
+  bottom: 5px;
+}
+@media (max-width: 1024px) {
+  .tilo{
+    width: 140px;
+    height: 3px;
+    background: gold;
+    margin-left: 458px;
+    position: relative;
+    bottom: 5px;
+  }
+  .duh{
+    width: 150px;
+    height: 3px;
+    background: gold;
+    margin-left: 452px;
+    position: relative;
+    bottom: 5px;
+  }
+  .rozum{
+    width: 190px;
+    height: 3px;
+    background: gold;
+    margin-left: 432px;
+    position: relative;
+    bottom: 5px;
+  }
+  .samorozvytok{
+    width: 305px;
+    height: 3px;
+    background: gold;
+    margin-left: 372px;
+    position: relative;
+    bottom: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .tilo{
+    width: 140px;
+    height: 3px;
+    background: gold;
+    margin-left: 330px;
+    position: relative;
+    bottom: 5px;
+  }
+  .duh{
+    width: 150px;
+    height: 3px;
+    background: gold;
+    margin-left: 322px;
+    position: relative;
+    bottom: 5px;
+  }
+  .rozum{
+    width: 190px;
+    height: 3px;
+    background: gold;
+    margin-left: 305px;
+    position: relative;
+    bottom: 5px;
+  }
+  .samorozvytok{
+    width: 305px;
+    height: 3px;
+    background: gold;
+    margin-left: 245px;
+    position: relative;
+    bottom: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .tilo{
+    width: 140px;
+    height: 3px;
+    background: gold;
+    margin-left: 158px;
+    position: relative;
+    bottom: 5px;
+  }
+  .duh{
+    width: 150px;
+    height: 3px;
+    background: gold;
+    margin-left: 150px;
+    position: relative;
+    bottom: 5px;
+  }
+  .rozum{
+    width: 190px;
+    height: 3px;
+    background: gold;
+    margin-left: 132px;
+    position: relative;
+    bottom: 5px;
+  }
+  .samorozvytok{
+    width: 305px;
+    height: 3px;
+    background: gold;
+    margin-left: 74px;
+    position: relative;
+    bottom: 5px;
+  }
+}
+@media (max-width: 375px) {
+  .tilo{
+    width: 140px;
+    height: 3px;
+    background: gold;
+    margin-left: 132px;
+    position: relative;
+    bottom: 5px;
+  }
+  .duh{
+    width: 150px;
+    height: 3px;
+    background: gold;
+    margin-left: 126px;
+    position: relative;
+    bottom: 5px;
+  }
+  .rozum{
+    width: 190px;
+    height: 3px;
+    background: gold;
+    margin-left: 108px;
+    position: relative;
+    bottom: 5px;
+  }
+  .samorozvytok{
+    width: 305px;
+    height: 3px;
+    background: gold;
+    margin-left: 48px;
+    position: relative;
+    bottom: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .tilo{
+    width: 140px;
+    height: 3px;
+    background: gold;
+    margin-left: 105px;
+    position: relative;
+    bottom: 5px;
+  }
+  .duh{
+    width: 150px;
+    height: 3px;
+    background: gold;
+    margin-left: 98px;
+    position: relative;
+    bottom: 5px;
+  }
+  .rozum{
+    width: 190px;
+    height: 3px;
+    background: gold;
+    margin-left: 80px;
+    position: relative;
+    bottom: 5px;
+  }
+  .samorozvytok{
+    width: 305px;
+    height: 3px;
+    background: gold;
+    margin-left: 20px;
+    position: relative;
+    bottom: 5px;
+  }
 }

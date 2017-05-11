@@ -110,6 +110,7 @@ color: gold
  }
 /*1 BLOCK*/
 .main-background {
+    height: 650px;
     padding-top: 55px;
     background: url(../img/photo_1.jpg) no-repeat;
     background-size: cover;

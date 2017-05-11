@@ -33,7 +33,7 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse" id="nav__menu">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav main-navbar">
                     <li><a href="#golovna_anchor">ГОЛОВНА</a>
                     <li><a href="#pro_tabir_anchor">ПРО ТАБІР</a>
                     <li><a href="#rozporyadok_anchor">РОЗПОРЯДОК ДНЯ</a>
@@ -42,10 +42,32 @@
                     <li><a href="#photo__section" rel="nofollow">ФОТО</a>
                     <li><a href="#contact__section" rel="nofollow">КОНТАКТИ</a>
                 </ul>
-
+<!-- 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="second"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+38 097 220 78 30; +38 063 066 02 93</a></li>
+                    <li class="second">
+                        <a href="#">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                +38 097 220 78 30; 
+                                +38 063 066 02 93
+                        </a>
+                    </li>
+                </ul> -->
+
+                <ul class="phones__nav">
+                    <li class="phones__list">
+                        <a class="phones__link">
+                            <span class="phones__icon">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            <span class="phones__text">
+                                +38 097 220 78 30 
+                                <br>
+                                +38 063 066 02 93
+                            </span>
+                        </a>
+                    </li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -377,14 +399,6 @@
                 </h1>
             </div>
         </div>
-        <img src="img/fance.png" class="img-responsive reg-fance-img">
-        <div class="row centered">
-            <div class="col-md-10 col-lg-offset-1 reg-discount__wrapper">
-                <p class="reg__discount">
-                    АКЦІЯ! ПРИ ПОЇЗДЦІ НА ДВА ЗАЇЗДИ ALIVECAMP, НА ДРУГИЙ ЗАЇЗД НАДАЄТЬСЯ ЗНИЖКА 20%!
-                </p>
-            </div>
-        </div>
         <!-- steps -->
         <div class="row centered steps-block__wrapper">
         <!-- step one -->
@@ -436,10 +450,23 @@
         </div>
         <div class="row centered reg_footer">
             <div class="col-md-10 col-md-offset-1">
-                <div class="reg__thing-list_wrapper">
+<!--                 <div class="reg__thing-list_wrapper">
                     <a href="list.html" class="reg__thing-list" target="_blank">
                         ПЕРЕЛІК НЕОБХІДНИХ РЕЧЕЙ
                     </a>
+                </div> -->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="reg__section_white-line"></div>
+            </div>
+        </div>
+        <img src="img/fance_thin.png" class="img-responsive reg-fance-img">
+                <div class="row centered">
+                    <div class="col-md-8 col-md-offset-2 reg-discount__wrapper">
+                        <p class="reg__discount">
+                            АКЦІЯ! ПРИ ПОЇЗДЦІ НА ДВА І БІЛЬШЕ ЗАЇЗДІВ ALIVECAMP, НА КОЖЕН НАСТУПНИЙ ЗАЇЗД НАДАЄТЬСЯ <span>ЗНИЖКА 20%!</span>
+                        </p>
+                    </div>
                 </div>
                 <p class="reg__additional-info">
                     *  Реєстрації вважається дійсною лише після виконання всіх трьох кроків, які подані вище;</br>
@@ -471,36 +498,40 @@
             <div id="email_modal">
                 <span id="modal_close">X</span>
                 <div class="row centered">
-                    <div class="col-md-8 col-md-offset-2">
+                    <!-- <div class="col-md-8 col-md-offset-2">
                         <form action="mailto:info@alivecamp.com.ua" method="post" enctype="text/plain">
-                            <span class="email__modal-text bold">
+                            <span class="email__modal-text bold"> -->
                     <div class="col-md-10 col-md-offset-1">
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScKi0W3SpbxiwvxmOP291a0wdJnLEQaXp6eIK3Q22G5HW87Cw/formResponse" method="post" enctype="text/plain">
-                            <span class="email__modal-text">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScKi0W3SpbxiwvxmOP291a0wdJnLEQaXp6eIK3Q22G5HW87Cw/formResponse" method="post" enctype="text/plain" target="_blank">
+                            <span class="email__modal-text bold">
                                 Прізвище:
-                            </span> </br>
-                            <input type="text" name="entry.935987859></br>
+                            </span>
+                            </br>
+                            <input type="text" name="entry.935987859"></br>
 
                             <span class="email__modal-text bold">
                                 Ім'я:
-                            </span></br>
-                            <input type="text" name="entry.1131368883"></br>
+                            </span>
+                            </br>
+                            <input type="text" name="entry.1131368883">
+                            </br>
 
                             <span class="email__modal-text bold">
                                 Телефон:
-                            </span></br>
-                            <input type="tel" name="entry.1263995965" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380"></br>
+                            </span>
+                            </br>
+                            <input type="tel" name="entry.1263995965" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380">
+                            </br>
 
                             <span class="email__modal-text bold">
                                 E-mail:
-                            </span></br>
-                            <input type="email" name="email">
+                            </span>
+                            </br>
+
+                            <input type="email" name="entry.2007694099">
                             </br>
                             </br>
                             <span class="email__modal-text bold">
-                            <input type="email" name="entry.2007694099"></br>
-
-                            <span class="email__modal-text">
                                 Вибір заїзду:
                             </span></br>
 
@@ -527,7 +558,7 @@
                                 </br>
                             </div>
                             </br>
-                            <input type="submit" value="Далі" class="email__submit">
+                            <input type="submit" value="Далі" class="email__submit" id="formSubmit">
                         </form>
                     </div>
                 </div>

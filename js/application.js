@@ -48,9 +48,9 @@ $(document).ready(function() {
     });
 
     // go to payment page after user fill the form
-    $("#formSubmit").on("click", function(event){
-        event.preventDefault();
-        // window.location.replace("http://"+window.location.hostname+"/payment")
-        window.location.href = "file:///home/pavlo/rails_projects/livecamps/payment.html";
-    })
+    // $("#formSubmit").on("click", function(event){
+    //     event.preventDefault();
+    //     // window.location.replace("http://"+window.location.hostname+"/payment")
+    //     window.location.href = "file:///home/pavlo/rails_projects/livecamps/payment.html";
+    // })
 });

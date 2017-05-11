@@ -8,6 +8,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -17,11 +19,108 @@
         ga('create', 'UA-98894304-1', 'auto');
         ga('send', 'pageview');
 
+
+        $(document).ready(function() {
+            $("#google-form").submit(function(event) {
+
+              /* stop form from submitting normally */
+              event.preventDefault();
+              console.log('ds');
+              /* get the action attribute from the <form action=""> element */
+              var $form = $( this ),
+                  url = $form.attr( 'action' );
+
+              /* Send the data using post with element id form-name and form-email*/
+                $.ajax({
+                    url: url,
+                   data: { 'entry.935987859': $('#form-name').val(),
+                         'entry.1131368883': $('#form-surname').val(),
+                         'entry.1263995965': $('#form-phone').val(),
+                         'entry.2007694099': $('#form-email').val(),
+                         'entry.42356218': $('#event1').is(':checked'),
+                         'entry.152859378': $('#event2').is(':checked'),
+                         'entry.777428256': $('#event3').is(':checked'),
+                         'entry.822357146': $('#event4').is(':checked'),
+                         'entry.319410644': $('#event5').is(':checked')
+                          },
+                    type: 'POST',
+                   dataType: "xml",
+                    complete: function() {  window.location.href = "roomaroom.github.io/payment"; },
+                });
+
+            });
+        });
     </script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44575906 = new Ya.Metrika({ id:44575906, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-        
+        <div class="email__modal">
+            <div id="email_modasl">
+                <span id="modal_close">X</span>
+                <div class="row centered">
+                    <div class="col-md-10 col-md-offset-1">
+                        <form id="google-form" action="https://docs.google.com/forms/d/e/1FAIpQLScKi0W3SpbxiwvxmOP291a0wdJnLEQaXp6eIK3Q22G5HW87Cw/formResponse" method="post" enctype="text/plain" target="_blank">
+                            <span class="email__modal-text bold">
+                                Прізвище:
+                            </span>
+                            </br>
 
+                            <input type="text" name="entry.935987859" id='form-name'></br>
+
+                            <span class="email__modal-text bold">
+                                Ім'я:
+                            </span>
+                            </br>
+                            <input type="text" name="entry.1131368883" id='form-surname'>
+                            </br>
+
+                            <span class="email__modal-text bold">
+                                Телефон:
+                            </span>
+                            </br>
+                            <input type="tel" name="entry.1263995965" maxlength="13" pattern="+38[0-9]{3}-[0-9]{7}" placeholder="+380" id='form-phone'>
+                            </br>
+
+                            <span class="email__modal-text bold">
+                                E-mail:
+                            </span>
+                            </br>
+
+                            <input type="email" name="entry.2007694099" id='form-email'>
+                            </br>
+                            </br>
+                            <span class="email__modal-text bold">
+                                Вибір заїзду:
+                            </span></br>
+
+                            <div class="pick-race__wrapper">
+                                <input type="checkbox" name="entry.42356218" id='event1'>
+                                <span class="email__modal-text"> 1. 22 червня – 30 червня; 16-26р.</span>
+                                </br>
+
+                                <input type="checkbox" name="entry.152859378"  id='event2'>
+                                <span class="email__modal-text"> 2. 30 червня – 08 липня; 16-26р.
+                                </span></br>
+
+                                <input type="checkbox" name="entry.777428256"  id='event3'>
+                                <span class="email__modal-text"> 3. 08 липня – 16 липня; 16-26р.
+                                </span></br>
+
+                                <input type="checkbox" name="entry.822357146" id='event4'>
+                                <span class="email__modal-text"> 4. 16 липня – 24 липня; необмежений вік; програма не є обов'язковою
+                                </span></br>
+
+                                <input type="checkbox" name="entry.319410644" id='event5'>
+                                <span class="email__modal-text"> 5. 24 липня – 1 серпня; 16-26р.
+                                </span>
+                                </br>
+                            </div>
+                            </br>
+                            <input type="submit" value="Далі" class="email__submit" id="formSubmit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

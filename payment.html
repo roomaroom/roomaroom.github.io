@@ -8,6 +8,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -16,7 +18,27 @@
 
         ga('create', 'UA-98894304-1', 'auto');
         ga('send', 'pageview');
+        $(document).ready(function() {
+            $("#google-form").submit(function(event) {
 
+              /* stop form from submitting normally */
+              event.preventDefault();
+              console.log('ds');
+              /* get the action attribute from the <form action=""> element */
+              var $form = $( this ),
+                  url = $form.attr( 'action' );
+
+              /* Send the data using post with element id form-name and form-email*/
+                $.ajax({
+                    url: url,
+                   
+                    type: 'POST',
+                   dataType: "xml",
+                    complete: function() { location.reload(); },
+                });
+
+            });
+        });
     </script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44575906 = new Ya.Metrika({ id:44575906, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
 </head>
@@ -29,7 +51,7 @@
                         <form action="mailto:info@alivecamp.com.ua" method="post" enctype="text/plain">
                             <span class="email__modal-text bold"> -->
                     <div class="col-md-10 col-md-offset-1">
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScKi0W3SpbxiwvxmOP291a0wdJnLEQaXp6eIK3Q22G5HW87Cw/formResponse" method="post" enctype="text/plain" target="_blank">
+                        <form id="google-form" action="https://docs.google.com/forms/d/e/1FAIpQLScKi0W3SpbxiwvxmOP291a0wdJnLEQaXp6eIK3Q22G5HW87Cw/formResponse" method="post" enctype="text/plain" target="_blank">
                             <span class="email__modal-text bold">
                                 Прізвище:
                             </span>
@@ -64,11 +86,11 @@
                             </span></br>
 
                             <div class="pick-race__wrapper">
-                                <input type="checkbox" name="race1" value="1">
+                                <input type="checkbox" name="entry.42356218" value="1">
                                 <span class="email__modal-text"> 1. 22 червня – 30 червня; 16-26р.</span>
                                 </br>
 
-                                <input type="checkbox" name="race2" value="2">
+                                <input type="checkbox" name="entry.152859378" value="2">
                                 <span class="email__modal-text"> 2. 30 червня – 08 липня; 16-26р.
                                 </span></br>
 

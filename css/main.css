@@ -201,9 +201,6 @@ i {
     background: #fdcb32;
     height: 100%;
 }
-.text-innerblock2_1 h1, .text-block2_3 h1 {
-    font-weight: 600;
-}
 .text-innerblock2_1 h1, .text-innerblock2_1 h4, .text-block2_3 h1, .text-block2_3 h4 {
     color: black;
 }
@@ -270,12 +267,8 @@ table tr, table th, table td {
     border-bottom: 0px;
 }
 .table tbody tr td strong {
-margin-left: 0.4em;
     border: 1px solid gold;
-    padding: 0.2em 0.5em;
-}
-.table tbody tr td span {
-    padding-left: 0.2em;
+    padding: 0.2em;
 }
 .text-block2_4 p {
     margin-bottom: 20px;

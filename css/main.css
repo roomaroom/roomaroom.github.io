@@ -183,7 +183,7 @@ i {
 .modal-header {
     padding: 15px;
     border-bottom: 1px solid #fdcb32;
-
+}
 /*2 BLOCK*/
 #pro_tabir {
     padding-top: 55px;
@@ -1162,9 +1162,6 @@ ul.contact__list-social li{
   letter-spacing: .2em;
 }
 
-  letter-spacing: .2em;
-}
-
 @media screen and (max-width: 790px) {
 
   .contact__phones{
@@ -1203,6 +1200,8 @@ ul.contact__list-social li{
     background: url(../img/photo_1.jpg) no-repeat;
     background-size: cover;
     min-height: 100%;
+}
+
 }
 .tilo{
   width: 140px;

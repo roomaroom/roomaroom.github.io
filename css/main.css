@@ -323,47 +323,63 @@ table {
     text-align: center;
   }
  }
+
 #rozporyadok {
-    padding-top: 55px;
+    padding-top: 90px;
     min-height: 644px;
 		background: url(../img/photo_4.jpg) no-repeat center;
 		background-size: cover;
 		color: white;
 		font-size: 18px;
 		font-family: Century Gothic;
+    position: relative;
 }
-.square1 {
-	width: 100px;
-	height: 16px;
-	background: gold;
-  padding-left: 300px;
-  margin-left: 480px;
-  z-index: 2;
-  position: relative;
-  top: 45px;
+
+.rozporyadok-text__wrapper-one{
+  text-align: left;
 }
-.square2 {
-	width: 100px;
-	height: 16px;
-	background: gold;
-  padding-left: 300px;
-  margin-left: 480px;
-  z-index: 2;
-  position: relative;
-  top: 455px;
+
+.rozporyadok-text__wrapper-two{
+  text-align: left;
 }
-.metro {
-	  text-align: center;
-		margin-bottom: 50px;
-		text-transform: uppercase;
-}
+
 .brd {
-	  border: 3px solid gold; /* Параметры границы */
-		padding: 20px 50px 300px 50px;
-		margin: 20px 100px 50px;
-    z-index: 1;
+  border: 3px solid gold;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px; 
 }
-@media (max-width: 1024px) {
+
+.square1 {
+	width: 300px;
+	height: 16px;
+	background: gold;
+  z-index: 2;
+  display: inline-block;
+  margin-top: -9px;
+  position: absolute;
+  top: 0px;
+}
+
+.square2 {
+	width: 300px;
+	height: 16px;
+	background: gold;
+  z-index: 2;
+  margin-bottom: -46px;
+  display: inline-block;
+}
+
+.metro {
+  text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+  display: block;
+  margin-top: 40px;
+}
+
+/*@media (max-width: 1024px) {
     #rozporyadok{
       padding-top: 35px;
     }
@@ -505,7 +521,7 @@ table {
       position: relative;
       top: 671px;
     }
-}
+}*/
 #aktyvnosti {
 		padding-top: 0px;
 		background: url(../img/fon12.jpg) no-repeat center;
@@ -1404,4 +1420,8 @@ ul.contact__list-social li{
     position: relative;
     bottom: 5px;
   }
+}
+
+.rozporyadok__gold-item{
+  color: gold;
 }

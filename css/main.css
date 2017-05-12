@@ -219,6 +219,9 @@ i {
     color: black;
 }
 .text-innerblock2_1 h1, .text-block2_3 h1 {
+    font-weight: 600;
+}
+.text-innerblock2_1 h1, .text-block2_3 h1 {
     font-size: 30px;
 }
 .text-innerblock2_1 h4, .text-block2_3 h4 {
@@ -282,6 +285,12 @@ table tr, table th, table td {
 }
 .table tbody tr td strong {
     border: 1px solid gold;
+    padding: 0.2em;
+    margin-left: 0.5em;
+}
+.table > tbody > tr > td > small {
+    position: relative;
+    bottom: 1em;
     padding: 0.2em;
 }
 .text-block2_4 p {

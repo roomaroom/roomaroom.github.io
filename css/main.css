@@ -696,6 +696,17 @@ table tr, table th, table td {
   z-index: 0;
 }
 
+@media (max-width: 630px) {
+  .reg__heading{
+    font-size: 3em;
+    letter-spacing: .1em;
+  }
+  .reg__heading.bordered{
+    top: -63px;
+    left: 5px;
+  }
+}
+
 .reg__column-heading{
   margin-bottom: -6em;
 }

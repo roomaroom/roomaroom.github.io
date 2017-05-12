@@ -421,9 +421,13 @@ table tr, table th, table td {
   z-index: 1;
 }
 
-/*#aktyvnosti img {
+#aktyvnosti img {
   max-width: 210px;
-}*/
+}
+
+.rin img {
+  max-width: 210px;
+}
 
 .activity__heading{
   font-weight: bold;

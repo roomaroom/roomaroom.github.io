@@ -30,7 +30,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#modal_close, #overlay, #formSubmit').click( function(){
+    $('#modal_close, #overlay').click( function(){
         $('#email_modal')
             .animate({opacity: 0, top: '45%'}, 200,
                 function(){

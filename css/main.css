@@ -409,6 +409,8 @@ table tr, table th, table td {
   margin-top: 40px;
 }
 
+/*-----------Activity styles------------*/
+
 #aktyvnosti {
 	padding-top: 0px;
 	background: url(../img/fon12.jpg) no-repeat center;
@@ -419,25 +421,64 @@ table tr, table th, table td {
   z-index: 1;
 }
 
+/*#aktyvnosti img {
+  max-width: 210px;
+}*/
+
 .activity__heading{
   font-weight: bold;
   letter-spacing: 3px;
 }
 /*.dotted {
-   background: url(../img/border.png) no-repeat center;
-   z-index: 2;
-   position: relative;
-   bottom: 20px;
-   top: 100px;
-   /*padding-top: 165px;
-   padding-left: 55px;
-   padding-right: 55px;*/
+  background: url(../img/border.png) no-repeat center;
+  z-index: 2;
+  position: relative;
+  bottom: 20px;
+  top: 100px;
+  padding-top: 165px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
+*/
+
+.tilo-wrapper{
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.activ{
+  margin-bottom: 5px;
+}
+
 .tilo{
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 3px;
 	background: gold;
+  position: absolute;
+  display: inline-block;
+  margin-left: -70px;
 }
+
+.duh-wrapper{
+  margin-bottom: 5px;
+}
+
+.duh{
+  width: 150px;
+  margin-left: -75px;
+}
+
+.rozum{
+  width: 190px;
+  margin-left: -95px;
+}
+
+.samorozvytok{
+  width: 310px;
+  margin-left: -155px;
+}
+
 .ico-vo {
 	margin: 0 auto;
 	display: table-cell;
@@ -579,7 +620,8 @@ table tr, table th, table td {
     background: url(../img/photo_5.jpg) no-repeat center;
     min-height: 1000px;
 }
-/*8 BLOCK*/
+
+/*Registration styles*/
 .reg__section{
   position: relative;
   background: #202020;
@@ -947,7 +989,6 @@ table tr, table th, table td {
   font-weight: bold;
   letter-spacing: .3em;
   font-size: 3em;
-/*  opacity: .9;*/
 }
 
 .carousel-inner{
@@ -1090,46 +1131,19 @@ ul.contact__list-social li{
 
 }
 .main-background {
-    padding-top: 55px;
-    background: url(../img/photo_1.jpg) no-repeat;
-    background-size: cover;
-    min-height: 100%;
+  padding-top: 55px;
+  background: url(../img/photo_1.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100%;
 }
 
 }
-.tilo{
-  width: 140px;
-  height: 3px;
-  background: gold;
-  margin-left: 590px;
-  position: relative;
-  bottom: 5px;
+
+.rozporyadok__gold-item{
+  color: gold;
 }
-.duh{
-  width: 150px;
-  height: 3px;
-  background: gold;
-  margin-left: 584px;
-  position: relative;
-  bottom: 5px;
-}
-.rozum{
-  width: 190px;
-  height: 3px;
-  background: gold;
-  margin-left: 565px;
-  position: relative;
-  bottom: 5px;
-}
-.samorozvytok{
-  width: 305px;
-  height: 3px;
-  background: gold;
-  margin-left: 505px;
-  position: relative;
-  bottom: 5px;
-}
-@media (max-width: 1024px) {
+
+/*@media (max-width: 1024px) {
   .tilo{
     width: 140px;
     height: 3px;
@@ -1299,7 +1313,4 @@ ul.contact__list-social li{
     bottom: 5px;
   }
 }
-
-.rozporyadok__gold-item{
-  color: gold;
-}
+*/

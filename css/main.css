@@ -56,7 +56,6 @@ ul{
   text-align: center;
 }
 .navbar-nav {
-/*  width: 100%;*/
   text-align: center;
 }
 .navbar-nav > li {
@@ -82,6 +81,25 @@ ul{
   width: 165px;
 }
 
+/*centering phones nav on mobile*/
+@media (max-width: 720px) {
+  .main-navbar{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #nav__menu > ul.phones__nav {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  #nav__menu{
+    text-align: center;
+  }
+}
+/*-------------------------------*/
 .phones__link{
   display: block;
 }
@@ -237,7 +255,6 @@ i {
   font-size: 17px;
 }
 table {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   width: 100%;
   color: gold;
 }
@@ -257,7 +274,6 @@ td, th {
 }
 table tr, table th, table td {
   text-align: center;
-
 }
 table th {
   font-size: 18px;
@@ -306,9 +322,7 @@ table tr, table th, table td {
 .text-block2_4 p {
   color: gold;
 }
-table {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
+
 /*3 BLOCK*/
 #vas_ochikuye {
   padding-top: 25px;
@@ -925,7 +939,7 @@ table {
 /*------Photo section------*/
 
 .photo_section{
-  background: url(../img/Photo_7.jpg) no-repeat center;
+  background: url(../img/Fon_7.jpg) no-repeat center;
 }
 
 .photo__heading {
@@ -998,7 +1012,7 @@ ul.thumbnails-carousel li {
 
 /*------Contact section------*/
 .contact__section{
-  background: url(../img/contact_background.png) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/contact__background.jpg) no-repeat center;
   opacity: 0.9;
 }
 

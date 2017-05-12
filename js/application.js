@@ -40,17 +40,10 @@ $(document).ready(function() {
             );
     });
     // anchor animation
-    $("#nav__menu").on("click","a", function (event) {
+    $("#nav__menu, #for-anchor").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top-50}, 1000);
     });
-
-    // go to payment page after user fill the form
-    // $("#formSubmit").on("click", function(event){
-    //     event.preventDefault();
-    //     // window.location.replace("http://"+window.location.hostname+"/payment")
-    //     window.location.href = "file:///home/pavlo/rails_projects/livecamps/payment.html";
-    // })
 });

@@ -284,6 +284,16 @@ table th small {
 table tr, table th, table td {
   font-size: 17px;
 }
+
+@media (max-width: 425px) {
+  table tr, table th, table td {
+    font-size: 14px;
+  }
+  .table > thead > tr > th {
+    font-size: 16px;
+  }
+}
+
 .table > thead > tr > th:ntn-child(1) {
   text-align: right;
 }

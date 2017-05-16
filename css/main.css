@@ -610,11 +610,15 @@ table tr, table th, table td {
 }
 @media (max-width: 768px) {
   .circle span {
-  	position: absolute;
+        margin: 0 35%;
+    position: absolute;
+    top: 77px!important;
+    font-size: 17px;
+/*  position: absolute;
   	top: 30px!important;
   	left: 15px;
     right: 15px;
-    font-size: 10px;
+    font-size: 10px;*/
   }
 }
 @media (max-width: 425px) {

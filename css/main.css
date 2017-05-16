@@ -284,6 +284,16 @@ table th small {
 table tr, table th, table td {
   font-size: 17px;
 }
+
+@media (max-width: 425px) {
+  table tr, table th, table td {
+    font-size: 14px;
+  }
+  .table > thead > tr > th {
+    font-size: 16px;
+  }
+}
+
 .table > thead > tr > th:ntn-child(1) {
   text-align: right;
 }
@@ -600,11 +610,15 @@ table tr, table th, table td {
 }
 @media (max-width: 768px) {
   .circle span {
-  	position: absolute;
+        margin: 0 35%;
+    position: absolute;
+    top: 77px!important;
+    font-size: 17px;
+/*  position: absolute;
   	top: 30px!important;
   	left: 15px;
     right: 15px;
-    font-size: 10px;
+    font-size: 10px;*/
   }
 }
 @media (max-width: 425px) {

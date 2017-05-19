@@ -137,12 +137,28 @@ color: gold
     padding: 1px 1px;
  }
 /*1 BLOCK*/
-.main-background {
-    height: 650px;
+/*.main-background {
+
     padding-top: 55px;
     background: url(../img/photo_1.jpg) no-repeat;
     background-size: cover;
     min-height: 100%;
+}*/
+#golovna {
+  padding-top: 55px;
+  background: url('video/fon.png');
+  background-size: cover;
+  min-height: 100%;
+}
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
 }
 .buttons {
     padding: 2em 0 7em 0;
@@ -388,7 +404,7 @@ table tr, table th, table td {
   z-index: 1;
   position: relative;
   text-align: center;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .square1 {
@@ -1159,14 +1175,6 @@ ul.contact__list-social li{
   .centering__block{
     display: none;
   }
-
-}
-.main-background {
-  padding-top: 55px;
-  background: url(../img/photo_1.jpg) no-repeat;
-  background-size: cover;
-  min-height: 100%;
-}
 
 }
 

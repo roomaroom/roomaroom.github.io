@@ -145,7 +145,6 @@ color: gold
     min-height: 100%;
 }*/
 #golovna {
-  height: 650px;
   padding-top: 55px;
   background: url('video/fon.png');
   background-size: cover;

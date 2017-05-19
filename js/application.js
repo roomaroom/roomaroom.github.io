@@ -46,4 +46,26 @@ $(document).ready(function() {
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top-50}, 1000);
     });
+
+    // subscribe modal window
+
+    function subscribe() {
+        $('#overlay').fadeIn(400,
+            function(){
+                $('#subscribe_window')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
+        });
+    }
+    setTimeout(subscribe, 3000);
+    
+    $('#modal_close, #overlay').click( function(){
+        $('#subscribe_window')
+            .animate({opacity: 0, top: '45%'}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    $('#overlay').fadeOut(400);
+                }
+            );
+    });
 });

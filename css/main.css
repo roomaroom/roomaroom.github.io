@@ -281,6 +281,16 @@ table th small {
 table tr, table th, table td {
   font-size: 17px;
 }
+
+@media (max-width: 425px) {
+  table tr, table th, table td {
+    font-size: 14px;
+  }
+  .table > thead > tr > th {
+    font-size: 16px;
+  }
+}
+
 .table > thead > tr > th:ntn-child(1) {
   text-align: right;
 }
@@ -597,20 +607,25 @@ table tr, table th, table td {
 }
 @media (max-width: 768px) {
   .circle span {
-  	position: absolute;
+        margin: 0 35%;
+    position: absolute;
+    top: 77px!important;
+    font-size: 17px;
+/*  position: absolute;
   	top: 30px!important;
   	left: 15px;
     right: 15px;
-    font-size: 10px;
+    font-size: 10px;*/
   }
 }
 @media (max-width: 425px) {
   .circle span {
   	position: absolute;
-  	top: 110px!important;
-  	left: 25px;
-    right: 25px;
-    font-size: 28px;
+  	top: 80px!important;
+  	/*left: 25px;
+    right: 25px;*/
+    font-size: 16px;
+    margin: 0 20%;
   }
   .hb{
     padding-bottom: 150px!important;
@@ -1104,7 +1119,8 @@ ul.contact__list-social li{
 }
 
 .contact__email{
-  margin-bottom: 5%;
+  padding-bottom: 20px;
+  /*margin-bottom: 5%;*/
   font-size: 1.1em;
   letter-spacing: .2em;
 }
@@ -1152,7 +1168,19 @@ ul.contact__list-social li{
 }
 
 .rozporyadok__gold-item{
-  color: gold;
+  color: #fdcb32;
+}
+
+#google-form {
+    line-height: 1.3;
+}
+
+.pick-race__wrapper {
+  color: #fdcb32;
+}
+
+.calculate_input {
+  color: black;
 }
 
 /*@media (max-width: 1024px) {

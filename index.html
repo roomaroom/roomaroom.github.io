@@ -4,9 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AliveCamp</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Молодіжний табір Alive Camp 2017 – незабутній активний відпочинок!</title>
+    <meta name="description" content="Літній молодіжний табір Alive Camp на Шацьких озерах – це нові знайомства · спортивні ігри, турніри, квести · незабутні вечірки · English Club · розвиваючі ігри · курс про стосунки · уроки гітари · незабутнє літо · чисте, мальовниче озеро · свіже повітря та багато іншого! Відчуй себе живим! 2017"> 
+    <!-- favicone connection -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicone end -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
@@ -53,9 +71,26 @@
                 });
 
             });
+
+        $("#subscribe-form").submit(function(event) {
+
+              event.preventDefault();
+              console.log('subscribe');
+
+              var $form = $( this ),
+                  url = $form.attr( 'action' );
+
+                $.ajax({
+                    url: url,
+                   data: { 'entry.61147996': $('#subscribe-email').val()
+                          },
+                    type: 'POST',
+                   dataType: "xml"
+                });
+            });
         });
+
     </script>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44575906 = new Ya.Metrika({ id:44575906, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -484,11 +519,6 @@
         </div>
         <div class="row centered reg_footer">
             <div class="col-md-10 col-md-offset-1">
-<!--                 <div class="reg__thing-list_wrapper">
-                    <a href="list.html" class="reg__thing-list" target="_blank">
-                        ПЕРЕЛІК НЕОБХІДНИХ РЕЧЕЙ
-                    </a>
-                </div> -->
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="reg__section_white-line"></div>
@@ -510,7 +540,7 @@
                 </p>
             </div>
         </div>
- <!-- modal window test -->
+ <!-- modal window info -->
         <div class="oleg_info">
             <div id="modal_form">
                 <div reg__modal>
@@ -522,6 +552,34 @@
                             <span class="modal__description">Необхідно переказати відповідну суму коштів на картку ПриватБанку:</span>
                             </br>
                             <span class="modal__number">5168 7556 3310 3490 - </br> Андрушків Андрій Юрійович</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- subscribe window after page load -->
+        <div class="subscribe_window">
+            <div id="subscribe_window">
+                <div reg__modal>
+                    <span id="modal_close">X</span>
+                    <div class="row centered">
+                        <div class="col-md-10 col-md-offset-1">
+                            <span class="modal__description">Підпишись на новини про молодіжні заходи:</span>
+
+                            <form name="subscribeForm" id="subscribe-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfrsvgYLpoFSRnwzYToKVGI6McdEDY_xuOxte-FSIicmqkiXA/formResponse" method="post" enctype="text/plain" target="_blank">
+                            
+                                <span class="email__modal-text bold subscribe-title">
+                                    E-mail:
+                                </span>
+                                </br>
+
+                                <input type="email" name="entry.611479963" id='subscribe-email' class="subscribe-input" required> 
+                                </br>    
+                                <input type="submit" value="Підписатись" class="email__submit">
+
+                            </form>
+    
+                            </br>
                         </div>
                     </div>
                 </div>
@@ -652,91 +710,91 @@
                 <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active srle">
-                  <img src="img/slider/1.jpg" alt="1.jpg" class="img-responsive">
+                  <img src="img/slider/1-min.jpg" alt="1.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/2.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/2-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/3.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/3-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/4.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/4-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/5.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/5-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/6.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/6-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/7.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/7-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/8.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/8-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/9.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/9-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/10.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/10-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/11.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/11-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/12.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/12-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/13.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/13-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/14.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/14-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/15.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/15-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/16.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/16-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/17.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/17-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/18.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/18-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/19.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/19-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/20.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/20-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/21.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/21-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/22.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/22-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/23.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/23-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/24.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/24-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/25.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/25-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/26.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/26-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/27.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/27-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/28.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/28-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
                 <div class="item">
-                  <img src="img/slider/29.jpg" alt="2.jpg" class="img-responsive">
+                  <img src="img/slider/29-min.jpg" alt="2.jpg" class="img-responsive">
                 </div>
               </div>
             </div>
@@ -754,28 +812,28 @@
                     <!-- Thumbnails -->
                     <ul class="thumbnails-carousel">
                         <li class="thumbnails">
-                            <img src="img/slider/1.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/1-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/2.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/2-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/3.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/3-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/4.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/4-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/5.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/5-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/6.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/6-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/7.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/7-min.jpg" alt="1_tn.jpg">
                         </li>
                         <li class="thumbnails">
-                            <img src="img/slider/8.jpg" alt="1_tn.jpg">
+                            <img src="img/slider/8-min.jpg" alt="1_tn.jpg">
                         </li>
                     </ul>
                 </div>
@@ -846,7 +904,9 @@
     <script src="./js/iframevideo.js"></script>
     <script src="./js/checked_form.js"></script>
 
-
-
+    <!-- Yandex.Metrika counter --> 
+    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44575906 = new Ya.Metrika({ id:44575906, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); 
+    </script> 
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>

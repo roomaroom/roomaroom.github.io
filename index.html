@@ -121,7 +121,7 @@
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </span>
                             <span class="phones__text">
-                                +38 097 220 78 30 
+                                +38 097 220 78 30
                                 <br>
                                 +38 063 066 02 93
                             </span>
@@ -135,7 +135,9 @@
     <!-- main page -->
     <a id="golovna_anchor"></a>
     <div id="golovna">
-    <div class="main-background">
+      <video autoplay loop muted class="bgvideo">
+        <source src="video/fon.mp4" type="video/mp4"></source>
+      </video>
         <div class="container">
             <div class="row centered">
                 <div class="col-lg-8 col-lg-offset-2 img-block1_1">
@@ -592,7 +594,7 @@
 
                         <script type="text/javascript">
                             function checkTotal() {
-                         
+
                                 var length = $('.total:checked').length;
                                 var value = 0;
                                 var discount = 0;
@@ -618,7 +620,7 @@
                                     discount = 750;
                                     break;
                                 }
-                                document.listForm.total.value = value;    
+                                document.listForm.total.value = value;
                                 document.listForm.discount.value = discount ;
                             }
 
@@ -680,8 +682,8 @@
                                 <span class="email__modal-text"> 5. 24 липня – 1 серпня; 16-26р.
                                 </span>
                                 <br/><br/>
-                                До оплати: <input class="calculate_input" type="text" size="5" name="total" value="0"/>
-                                Економія: <input class="calculate_input" type="text" size="5" name="discount" value="0"/>
+                                До оплати: <input class="calculate_input" type="text" size="5" name="total" value="0" readonly/>
+                                Економія: <input class="calculate_input" type="text" size="5" name="discount" value="0" readonly/>
                             </div>
                             </br>
                             <input type="submit" value="Далі" class="email__submit" id="formSubmit">

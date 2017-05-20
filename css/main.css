@@ -857,6 +857,10 @@ table tr, table th, table td {
   margin-top: -110px;
 }
 
+.subscribe-active{
+  border: green;
+}
+
 .subscribe-title{
   padding-bottom: 10px;
   display: inline-block;

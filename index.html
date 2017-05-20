@@ -82,10 +82,12 @@
 
                 $.ajax({
                     url: url,
-                   data: { 'entry.61147996': $('#subscribe-email').val()
-                          },
+                    data: { 'entry.611479963': $('#subscribe-email').val() },
                     type: 'POST',
-                   dataType: "xml"
+                    dataType: "xml",
+                    complete: function() { 
+                        $('#modal_close, #overlay').trigger( "click" ); 
+                    },
                 });
             });
         });

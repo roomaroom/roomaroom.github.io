@@ -28,7 +28,8 @@ body {
   font-style: italic;
 }
 
-ю  font-family: CenturyGothic;
+@font-face{ 
+  font-family: CenturyGothic;
   src: url(fonts/gothic/GOTHICBI_0.ttf);
   font-style: italic;
   font-weight: bold;
@@ -132,14 +133,13 @@ ul{
   padding: 1px 1px;
  }
 /*1 BLOCK*/
-/*.main-background {
-
+.main-background {
     padding-top: 55px;
     background: url(../img/photo_1.jpg) no-repeat;
     background-size: cover;
     min-height: 100%;
-}*/
-@media (min-width: 1024px) {
+}
+/*@media (min-width: 1024px) {
 .golovna {
   padding-top: 55px;
   background: url('video/fon.png');
@@ -156,8 +156,8 @@ ul{
   height: auto;
   z-index: -9999;
 }
-}
-@media (max-width: 1023px) {
+}*/
+/*@media (max-width: 1023px) {
 .golovna {
   padding-top: 55px;
   background: url(../img/photo_1.jpg) no-repeat;
@@ -174,7 +174,12 @@ ul{
   height: auto;
   z-index: -9999;
 }
+}*/
+
+div.row.buttons.centered{
+  margin-bottom: 37px;
 }
+
 .buttons {
   padding: 2em 0 7em 0;
   padding: 3em 0;
@@ -1206,6 +1211,7 @@ ul.contact__list-social li{
 
   .contact__list-social{
     width: 200px;
+    margin-left: 20px;
   }
 
   .centering__block{

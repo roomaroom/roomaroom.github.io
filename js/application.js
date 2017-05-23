@@ -47,7 +47,14 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top-50}, 1000);
     });
 
-    // subscribe modal window
+    // subscribe modal window (shows only at first visit)
+    var isshow = localStorage.getItem('isshow');
+    if (isshow== null) {
+        localStorage.setItem('isshow', 1);
+
+        // Show popup here
+        setTimeout(subscribe, 3000);
+    }
 
     function subscribe() {
         $('#overlay').fadeIn(400,
@@ -57,7 +64,6 @@ $(document).ready(function() {
                     .animate({opacity: 1, top: '50%'}, 200);
         });
     }
-    setTimeout(subscribe, 3000);
     
     $('#modal_close, #overlay').click( function(){
         $('#subscribe_window')

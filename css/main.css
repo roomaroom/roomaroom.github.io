@@ -834,6 +834,8 @@ table tr, table th, table td {
 .reg__section_white-line{
   border-bottom: 3px solid #fff;
   margin-bottom: 25px;
+  width: 80%;
+  display: inline-block;
 }
 
 .reg-fance-img{
@@ -1236,11 +1238,23 @@ ul.contact__list-social li{
   color: black;
 }
 
-
-/*.modal-content{
-  border-radius: 0;
+.discount-new{
+  text-transform: uppercase;
+  font-size: 20px;
+  background: #fff;
+  padding: 0px;
 }
 
-.modal-header{
-  display: none;
-}*/
+.discount-new h3 {
+  color: black;
+  margin: 14px 15px;
+}
+
+.discount-new span {
+  font-weight: bold;
+}
+
+.discount-new__row{
+  margin-bottom: 2%;
+  margin-top: 1%;
+}

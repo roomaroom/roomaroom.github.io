@@ -46,4 +46,32 @@ $(document).ready(function() {
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top-50}, 1000);
     });
+
+    // subscribe modal window (shows only at first visit)
+    var isshow = localStorage.getItem('isshow');
+    if (isshow== null) {
+        localStorage.setItem('isshow', 1);
+
+        // Show popup here
+        setTimeout(subscribe, 3000);
+    }
+
+    function subscribe() {
+        $('#overlay').fadeIn(400,
+            function(){
+                $('#subscribe_window')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
+        });
+    }
+    
+    $('#modal_close, #overlay').click( function(){
+        $('#subscribe_window')
+            .animate({opacity: 0, top: '45%'}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    $('#overlay').fadeOut(400);
+                }
+            );
+        });
 });

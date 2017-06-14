@@ -1254,7 +1254,26 @@ ul.contact__list-social li{
   font-weight: bold;
 }
 
+*/
+
+.strikeout {
+  /*font-size: 4em;
+  line-height: 1em;*/
+  position: relative;
+  width: 30px;
+}
+.strikeout::after {
+  border-bottom: 0.125em solid gold;
+  content: "";
+  left: 50px;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 30px;
+  top: 24%;
+}
+
 .discount-new__row{
   margin-bottom: 2%;
   margin-top: 1%;
 }
+

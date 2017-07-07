@@ -1256,22 +1256,26 @@ ul.contact__list-social li{
 
 */
 
-.strikeout {
+.strikeout1, .strikeout2 {
   /*font-size: 4em;
   line-height: 1em;*/
   position: relative;
   width: 30px;
 }
-.strikeout::after {
+.strikeout1::after, .strikeout2::after {
   border-bottom: 0.125em solid gold;
   content: "";
   left: 50px;
   margin-top: calc(0.125em / 2 * -1);
   position: absolute;
   right: 30px;
+}
+.strikeout1::after {
   top: 24%;
 }
-
+.strikeout2::after {
+  top: 36%;
+}
 .discount-new__row{
   margin-bottom: 2%;
   margin-top: 1%;

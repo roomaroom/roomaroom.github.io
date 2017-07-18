@@ -1256,13 +1256,13 @@ ul.contact__list-social li{
 
 */
 
-.strikeout1, .strikeout2 {
+.strikeout1, .strikeout2, .strikeout3, .strikeout4 {
   /*font-size: 4em;
   line-height: 1em;*/
   position: relative;
   width: 30px;
 }
-.strikeout1::after, .strikeout2::after {
+.strikeout1::after, .strikeout2::after, .strikeout3::after, .strikeout4::after {
   border-bottom: 0.125em solid gold;
   content: "";
   left: 50px;
@@ -1275,6 +1275,12 @@ ul.contact__list-social li{
 }
 .strikeout2::after {
   top: 36%;
+}
+.strikeout3::after {
+  top: 48%;
+}
+.strikeout4::after {
+  top: 62.5%;
 }
 .discount-new__row{
   margin-bottom: 2%;
